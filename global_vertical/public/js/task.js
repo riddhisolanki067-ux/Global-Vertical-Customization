@@ -6,6 +6,9 @@ frappe.ui.form.on("Task", {
     custom_downloadd: (frm) => {
         downloadChecklistHTML(frm)
     },
+    custom_clear_table: (frm) => {
+        clearChecklist(frm)
+    },
 })
 
 function installationCheckList(frm) {
@@ -1118,3 +1121,26 @@ function attachPDFToDocument(frm, pdfBase64, filename) {
 }
 
 
+function clearChecklist(frm) {
+  try {
+    // 1. Uncheck all checkboxes in the UI
+    $('.installation-checklist-container input[type="checkbox"]').prop("checked", false)
+
+    // 2. Clear from backend also
+    frappe.call({
+      method: "global_vertical.py.quality_check.set_installation_checklist_status",
+      args: {
+        task_name: frm.doc.name,
+        selected_items: JSON.stringify([]), // send empty list to clear
+      },
+      callback: function (r) {
+        frappe.show_alert({ message: "Checklist Cleared successfully", indicator: "green" })
+      },
+      error: function (err) {
+        console.error("Error clearing checklist:", err)
+      },
+    })
+  } catch (error) {
+    console.error("Error in clearChecklist:", error)
+  }
+}
