@@ -1,5 +1,7 @@
 import frappe
 import json
+import base64
+from frappe.utils.pdf import get_pdf
 
 @frappe.whitelist()
 def get_installation_checklist_status(task_name):
@@ -49,3 +51,25 @@ def set_installation_checklist_status(task_name, selected_items):
     except Exception as e:
         frappe.log_error("Error: While Setting Installation Checklist", str(e))
         return str(e)
+    
+    
+
+@frappe.whitelist()
+def generate_custom_pdf(name, html, filename):
+    # Generate PDF from HTML
+    pdf_data = get_pdf(html)
+
+    # Attach file to document
+    filedoc = frappe.get_doc({
+        "doctype": "File",
+        "file_name": filename,
+        "attached_to_doctype": "Task",
+        "attached_to_name": name,
+        "is_private": 0,
+        "content": pdf_data,
+    })
+    filedoc.save(ignore_permissions=True)
+
+    # Return base64 so client can download
+    return base64.b64encode(pdf_data).decode("utf-8")
+    

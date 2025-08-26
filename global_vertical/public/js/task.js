@@ -1,9 +1,11 @@
 
-
 frappe.ui.form.on("Task", {
-  refresh: (frm) => {
-    installationCheckList(frm)
-  },
+    refresh: (frm) => {
+        installationCheckList(frm)
+    },
+    custom_downloadd: (frm) => {
+        downloadChecklistHTML(frm)
+    },
 })
 
 function installationCheckList(frm) {
@@ -645,6 +647,28 @@ function bindCheckboxEvents(frm) {
 
 function handleChecklistChange(checkbox, frm) {
   try {
+    const $checkbox = $(checkbox)
+    const code = $checkbox.data("code")
+    const type = $checkbox.data("type")
+
+    if ($checkbox.is(":checked")) {
+      // Find all other checkboxes in the same row (same code) and uncheck them
+      $(`.installation-checklist-container input[data-code="${code}"]`)
+        .not($checkbox)
+        .each(function () {
+          if ($(this).is(":checked")) {
+            $(this).prop("checked", false)
+            // Show brief message about switching selection
+            // frappe.show_alert(
+            //   {
+            //     message: `Switched ${code} selection to ${type.toUpperCase()}`,
+            //     indicator: "blue",
+            //   },
+            //   2,
+            // )
+          }
+        })
+    }
     var selectedItems = []
 
     // Get all checked checkboxes
@@ -704,4 +728,393 @@ function loadSavedChecklist(frm) {
     },
   })
 }
+
+
+function downloadChecklistHTML(frm) {
+  try {
+    // Check if HTML has data (any checkboxes are checked)
+    const checkedBoxes = $('.installation-checklist-container input[type="checkbox"]:checked')
+
+    if (checkedBoxes.length === 0) {
+      frappe.show_alert(
+        {
+          message: "No checklist data found. Please select some items first.",
+          indicator: "orange",
+        },
+        3,
+      )
+      return
+    }
+
+    // Get custom_s_no field value for filename
+    const serialNo = frm.doc.custom_s_no || frm.doc.name || "checklist"
+    const filename = `Installation_Checklist_${serialNo}.pdf`
+
+    // Generate PDF using Frappe's PDF generation
+    generatePDF(frm, filename)
+  } catch (error) {
+    console.error("Error downloading checklist:", error)
+    frappe.show_alert(
+      {
+        message: "Error downloading checklist",
+        indicator: "red",
+      },
+      3,
+    )
+  }
+}
+
+function generatePDF(frm, filename) {
+  const serialNo = frm.doc.custom_s_no || ""
+  const htmlContent = generatePDFHTML(frm, serialNo)
+
+  frappe.call({
+    method: "global_vertical.py.quality_check.generate_custom_pdf",
+    args: {
+      name: frm.doc.name,
+      html: htmlContent,
+      filename: filename,
+    },
+    freeze: true,  // ✅ shows Frappe’s built-in freeze overlay
+    freeze_message: __("Preparing your PDF..."),
+    callback: function (r) {
+      if (r.message) {
+        const pdfBase64 = r.message
+
+        // Create download link for PDF
+        const link = document.createElement("a")
+        link.href = "data:application/pdf;base64," + pdfBase64
+        link.download = filename
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link)
+
+        frappe.show_alert(
+          {
+            message: `Checklist downloaded and attached as ${filename}`,
+            indicator: "green",
+          },
+          3,
+        )
+
+        frm.reload_doc()
+      }
+    },
+    error: (error) => {
+      console.error("Error generating PDF:", error)
+      generatePDFViaPrint(frm, filename)
+    },
+  })
+}
+
+function generatePDFViaPrint(frm, filename) {
+//   const customerName = frm.doc.customer_name || frm.doc.name
+  const serialNo = frm.doc.custom_s_no || ""
+//   const currentDate = frappe.datetime.now_datetime()
+
+  // Create a new window with the checklist content
+  const printWindow = window.open("", "_blank")
+  const htmlContent = generatePDFHTML(frm, serialNo)
+
+  printWindow.document.write(htmlContent)
+  printWindow.document.close()
+
+  // Trigger print dialog
+  printWindow.onload = () => {
+    printWindow.print()
+    printWindow.close()
+  }
+
+  frappe.show_alert(
+    {
+      message: "Print dialog opened. Save as PDF from print options.",
+      indicator: "blue",
+    },
+    4,
+  )
+}
+
+function generatePDFHTML(frm, serialNo) {
+  let html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installation Checklist - ${serialNo}</title>
+    <style>
+        @page { margin: 20mm; }
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #0b66b3;
+            padding-bottom: 10px;
+        }
+        .info { 
+            background: #f5f5f5; 
+            padding: 10px; 
+            margin-bottom: 20px; 
+            border-radius: 4px;
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-bottom: 20px; 
+            font-size: 11px;
+        }
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 6px; 
+            text-align: left; 
+        }
+        th { 
+            background-color: #0b66b3; 
+            color: white;
+            font-weight: bold;
+        }
+        .checked { 
+            background-color: #d4edda; 
+            text-align: center;
+            font-weight: bold;
+        }
+        .code { 
+            font-weight: bold; 
+            color: #0b66b3; 
+            text-align: center;
+            width: 60px;
+        }
+        .work-desc { font-size: 10px; }
+        .checkbox-col { 
+            width: 50px; 
+            text-align: center; 
+        }
+        .section-title {
+            background: #0b66b3;
+            color: white;
+            padding: 8px;
+            text-align: center;
+            font-weight: bold;
+            margin: 20px 0 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Installation Checklist - Civil & Electrical</h1>
+        <div class="info">
+            <strong>Serial No:</strong> ${serialNo} | 
+        </div>
+    </div>
+    <div style="margin-top: 30px; font-size: 10px; color: #666;">
+        <p><strong>Note:</strong> As per our meeting & discussions today at site, please complete the following Pending Civil & Electrical works marked as ...NO... An early action shall be highly appreciated.</p>
+    </div>`
+
+
+
+  const civilBeforeCodes = {}
+  const electricalCodes = {}
+  const civilDuringCodes = {}
+
+  // Collect and separate codes into 3 groups
+  $('.installation-checklist-container input[type="checkbox"]').each(function () {
+    const $checkbox = $(this)
+    const code = $checkbox.data("code")
+    const work = $checkbox.data("work")
+    const type = $checkbox.data("type")
+    const isChecked = $checkbox.is(":checked")
+
+    let targetObj
+    if (code.startsWith("C")) {
+      const codeNumber = Number.parseInt(code.substring(1))
+      if (codeNumber >= 1 && codeNumber <= 34) {
+        targetObj = civilBeforeCodes
+      } else if (codeNumber >= 35 && codeNumber <= 40) {
+        targetObj = civilDuringCodes
+      }
+    } else if (code.startsWith("E")) {
+      targetObj = electricalCodes
+    }
+
+    if (targetObj) {
+      if (!targetObj[code]) {
+        targetObj[code] = {
+          work: work,
+          na: false,
+          yes: false,
+          no: false,
+        }
+      }
+
+      if (isChecked) {
+        targetObj[code][type] = true
+      }
+    }
+  })
+
+  function sortAlphanumeric(a, b) {
+    const aMatch = a.match(/^([A-Z]+)(\d+)$/)
+    const bMatch = b.match(/^([A-Z]+)(\d+)$/)
+
+    if (aMatch && bMatch) {
+      const aPrefix = aMatch[1]
+      const bPrefix = bMatch[1]
+      const aNumber = Number.parseInt(aMatch[2])
+      const bNumber = Number.parseInt(bMatch[2])
+
+      if (aPrefix !== bPrefix) {
+        return aPrefix.localeCompare(bPrefix)
+      }
+
+      return aNumber - bNumber
+    }
+
+    return a.localeCompare(b)
+  }
+
+  // Section 1: Civil Works Before Installation (C1-C34)
+  if (Object.keys(civilBeforeCodes).length > 0) {
+    html += `
+    <div class="section-title">CIVIL WORKS REQUIRED TO BE COMPLETED BEFORE START OF INSTALLATION</div>
+    <table>
+        <thead>
+            <tr>
+                <th class="code">Code</th>
+                <th>Work Description</th>
+                <th class="checkbox-col">N/A</th>
+                <th class="checkbox-col">YES</th>
+                <th class="checkbox-col">NO</th>
+            </tr>
+        </thead>
+        <tbody>`
+
+    Object.keys(civilBeforeCodes)
+      .sort(sortAlphanumeric)
+      .forEach((code) => {
+        const data = civilBeforeCodes[code]
+        html += `<tr>
+        <td class="code">${code}</td>
+        <td class="work-desc">${data.work}</td>
+        <td class="checkbox-col ${data.na ? "checked" : ""}">
+          ${data.na ? "✓" : ""}
+        </td>
+        <td class="checkbox-col ${data.yes ? "checked" : ""}">
+          ${data.yes ? "✓" : ""}
+        </td>
+        <td class="checkbox-col ${data.no ? "checked" : ""}">
+          ${data.no ? "✓" : ""}
+        </td>
+      </tr>`
+      })
+
+    html += `</tbody></table>`
+  }
+
+  // Section 2: Electrical Works (E1-E16)
+  if (Object.keys(electricalCodes).length > 0) {
+    html += `
+    <div class="section-title">ELECTRICAL WORKS REQUIRED BEFORE START OF INSTALLATION</div>
+    <table>
+        <thead>
+            <tr>
+                <th class="code">Code</th>
+                <th>Work Description</th>
+                <th class="checkbox-col">N/A</th>
+                <th class="checkbox-col">YES</th>
+                <th class="checkbox-col">NO</th>
+            </tr>
+        </thead>
+        <tbody>`
+
+    Object.keys(electricalCodes)
+      .sort(sortAlphanumeric)
+      .forEach((code) => {
+        const data = electricalCodes[code]
+        html += `<tr>
+        <td class="code">${code}</td>
+        <td class="work-desc">${data.work}</td>
+        <td class="checkbox-col ${data.na ? "checked" : ""}">
+          ${data.na ? "✓" : ""}
+        </td>
+        <td class="checkbox-col ${data.yes ? "checked" : ""}">
+          ${data.yes ? "✓" : ""}
+        </td>
+        <td class="checkbox-col ${data.no ? "checked" : ""}">
+          ${data.no ? "✓" : ""}
+        </td>
+      </tr>`
+      })
+
+    html += `</tbody></table>`
+  }
+
+  // Section 3: Civil Works During Installation (C35-C40)
+  if (Object.keys(civilDuringCodes).length > 0) {
+    html += `
+    <div class="section-title">CIVIL WORKS REQUIRED DURING INSTALLATION</div>
+    <table>
+        <thead>
+            <tr>
+                <th class="code">Code</th>
+                <th>Work Description</th>
+                <th class="checkbox-col">N/A</th>
+                <th class="checkbox-col">YES</th>
+                <th class="checkbox-col">NO</th>
+            </tr>
+        </thead>
+        <tbody>`
+
+    Object.keys(civilDuringCodes)
+      .sort(sortAlphanumeric)
+      .forEach((code) => {
+        const data = civilDuringCodes[code]
+        html += `<tr>
+        <td class="code">${code}</td>
+        <td class="work-desc">${data.work}</td>
+        <td class="checkbox-col ${data.na ? "checked" : ""}">
+          ${data.na ? "✓" : ""}
+        </td>
+        <td class="checkbox-col ${data.yes ? "checked" : ""}">
+          ${data.yes ? "✓" : ""}
+        </td>
+        <td class="checkbox-col ${data.no ? "checked" : ""}">
+          ${data.no ? "✓" : ""}
+        </td>
+      </tr>`
+      })
+
+    html += `</tbody></table>`
+  }
+
+  html += `
+    
+</body></html>`
+
+  return html
+}
+
+function attachPDFToDocument(frm, pdfBase64, filename) {
+  frappe.call({
+    method: "frappe.handler.upload_file",
+    args: {
+      filename: filename,
+      filedata: pdfBase64,
+      attached_to_doctype: frm.doc.doctype,
+      attached_to_name: frm.doc.name,
+      folder: "Home/Attachments",
+      is_private: 0,
+    },
+    callback: (response) => {
+      if (response.message) {
+        frm.reload_doc()
+      }
+    },
+  })
+}
+
 
