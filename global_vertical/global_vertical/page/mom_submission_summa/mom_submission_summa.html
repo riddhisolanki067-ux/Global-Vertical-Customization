@@ -1,0 +1,158 @@
+<table id="report_table" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+    
+    <!-- ROW 1 -->
+    <tr>
+        <td colspan="3" style="text-align: center; padding: 10px;">
+            <div style="display: inline-block; text-align: center;">
+                <!-- Logo Container -->
+                <div style="display: flex; align-items: center; justify-content: center; gap: 5px;">
+                    <!-- The "E" made of three horizontal bars -->
+                    <div style="display: flex; flex-direction: column; justify-content: space-between; height: 20px;">
+                        <div style="width: 15px; height: 4px; background-color: #4a4f55; border-radius: 2px;"></div>
+                        <div style="width: 15px; height: 4px; background-color: #4a4f55; border-radius: 2px;"></div>
+                        <div style="width: 15px; height: 4px; background-color: #4a4f55; border-radius: 2px;"></div>
+                    </div>
+
+                    <!-- ASA Text -->
+                    <div style="position: relative; font-weight: bold; font-size: 24px; display: flex; align-items: center;">
+                        <span style="color: #1f4c84;">A</span>
+                        <span style="color: #4a4f55;">S</span>
+                        <span style="color: #1f4c84;">A</span>
+                        <span style="font-size: 15px; position: absolute; top: -5px; right: -12px; color: #4a4f55;">®</span>
+                    </div>
+                </div>
+
+                <!-- Tagline -->
+                <div style="font-size: 10px; letter-spacing: 3px; color: #4a4f55; margin-top: 2px;">
+                    ELEVATORS
+                </div>
+            </div>
+        </td>
+
+        <td colspan="9" style="text-align: center; font-size: 18px; font-weight: bold; background-color: #f3f3f3;">
+            MOM SUBMISSION SUMMARY REPORT
+        </td>
+
+        <td colspan="2" style="text-align: center; background-color: #f3f3f3;">MOM-SSR</td>
+        <td colspan="2" style="text-align: center;"></td>
+    </tr>
+
+    <!-- ROW 2 -->
+    <tr>
+        <td colspan="3" style="text-align: center; font-size: 18px; font-weight: bold;">PCH</td>
+
+        <td colspan="9" style="text-align: center;">
+            <label style="font-size: 18px;">
+                <input type="checkbox" name="location" value="GGN"> GGN
+            </label>
+            <label style="margin-left: 30px; font-size: 18px;">
+                <input type="checkbox" name="location" value="NOIDA"> NOIDA
+            </label>
+            <label style="margin-left: 30px; font-size: 18px;">
+                <input type="checkbox" name="location" value="PUNJAB"> PUNJAB
+            </label>
+        </td>
+
+        <td colspan="2" style="text-align: center; background-color: #f3f3f3;">DATE</td>
+        <td colspan="2" style="text-align: center;"></td>
+    </tr>
+
+    <!-- ROW 3 -->
+    <tr>
+        <td colspan="3" style="text-align: center; background-color: #f3f3f3; font-size: 12px;">
+            SUPERVISOR/MANAGER <br>NAME
+        </td>
+        
+        <td colspan="9" style="text-align: center; font-size: 18px; font-weight: bold;"></td>
+        
+        <td colspan="2" style="text-align: center; background-color: #f3f3f3;">CITY</td>
+        <td colspan="2" style="text-align: center;"></td>
+    </tr>    
+
+    <!-- ROW 4 -->
+    <tr>
+        <td colspan="3" style="text-align: center;border-top:None !important;background-color: #f3f3f3;">PERIOD</td>
+        <td colspan="2" style="text-align: center; border-top:None !important;background-color: #f3f3f3;">FROM</td>
+        <td colspan="7" style="text-align: center;border-top:None!important;">{{ filter_from_date }}</td>
+        <td colspan="2" style="text-align: center;border-top:None!important;background-color: #f3f3f3;">TO</td>
+        <td colspan="2" style="text-align: center;border-top:None!important;">{{ filter_to_date}}</td>
+
+    </tr>
+
+    <!-- ROW 5 -->
+    <tr>
+        <td colspan="12" style="text-align: center;border-top:None!important;background-color: #f3f3f3;font-size: 15px; font-weight: bold;">PLEASE FILL IN CAPITAL LETTERS</td>
+        <td colspan="4" style="text-align: center; border-top:None!important;background-color: #f3f3f3;font-size: 10px; font-weight: bold;">PLEASE SUMMIT IN EVERY WEEK IN OFFICE</td>
+
+    </tr>
+
+        <!-- ROW 6 -->
+    <tr>
+        <td colspan="1" style="text-align: center;border-top:None;background-color: #f3f3f3;margin-right: 5px;">SN</td>
+        <td colspan="2" style="text-align: center; border-top:None;background-color: #f3f3f3;">MOM NO</td>
+        <td colspan="2" style="text-align: center;border-top:None;background-color: #f3f3f3;">ORDER NO</td>
+        <td colspan="7" style="text-align: center;border-top:None;background-color: #f3f3f3;">ORDER NAME</td>
+        <td colspan="2" style="text-align: center;border-top:None;background-color: #f3f3f3;">DATE OF VISIT</td>
+        <td colspan="2" style="text-align: center;border-top:None;background-color: #f3f3f3; font-size: 10px;">FIELD CORRECTLY<br>(YES/NO)</td>
+    </tr>
+ 
+    <!-- DYNAMIC ROW -->
+    {% let counter = 1 %}
+    {% $.each(momdata, (idx, row) => { %} 
+    <tr>
+        <td colspan="1" style="text-align: center;border-top:None;">{{counter}}</td>
+        <td colspan="2" style="text-align: center; border-top:None;">{{row.mom_id}}</td>
+        <td colspan="2" style="text-align: center;border-top:None;">{{row.custom_order_number}}</td>
+        <td colspan="7" style="text-align: center;border-top:None;">{{row.custom_order_name}}</td>
+        <td colspan="2" style="text-align: center;border-top:None;">{{row.custom_date_of_mom}}</td>
+        <td colspan="2" style="text-align: center;border-top:None;"></td>
+    </tr>
+    {% counter = counter + 1 %}
+	{% }) %}
+
+     <!-- BOTTOM ROW 1 -->
+    <tr>
+        <td colspan="3" style=" text-align: center;border-top:None;background-color: #f3f3f3;"></td>
+        <td colspan="4" style="text-align: center; border-top:None;background-color: #f3f3f3;">SUBMITTED BY</td>
+        <td colspan="7" style="text-align: center;border-top:None;background-color: #f3f3f3;">RECEIVED BY</td>
+        <td colspan="2" style=" text-align: center;border-top:None;background-color: #f3f3f3;">APPROVED BY</td>
+    </tr>
+
+    <!-- BOTTOM ROW 2 -->
+    <tr>
+        <td colspan="3" style=" text-align: center;border-top:None;background-color: #f3f3f3;">DATE</td>
+        <td colspan="4" style="text-align: center; border-top:None;"></td>
+        <td colspan="7" style="text-align: center;border-top:None;"></td>
+        <td colspan="2" style=" text-align: center;border-top:None;"></td>
+    </tr>
+
+    <!-- BOTTOM ROW 3 -->
+    <tr>
+        <td colspan="3" style=" text-align: center;border-top:None;background-color: #f3f3f3;">NAME</td>
+        <td colspan="4" style="text-align: center; border-top:None;"></td>
+        <td colspan="7" style="text-align: center;border-top:None;"></td>
+        <td colspan="2" style=" text-align: center;border-top:None;"></td>
+    </tr>
+
+    <!-- BOTTOM ROW 4 -->
+    <tr>
+        <td colspan="3" style=" text-align: center;border-top:None;background-color: #f3f3f3;">SIGNATURE</td>
+        <td colspan="4" style="text-align: center; border-top:None;"></td>
+        <td colspan="7" style="text-align: center;border-top:None;"></td>
+        <td colspan="2" style=" text-align: center;border-top:None;"></td>
+    </tr>
+
+</table>
+
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed; /* Keeps colspan consistent */
+    }
+    td {
+        border: 1px solid #000;
+        padding: 8px;
+        text-align: center;
+    }
+</style>

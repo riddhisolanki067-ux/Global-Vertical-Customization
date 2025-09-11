@@ -137,13 +137,11 @@ doctype_js = {"Task" : "public/js/task.js"}
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Task": {
+		"validate": "global_vertical.py.task.get_session_user_initials",
+	}
+}
 
 # Scheduled Tasks
 # ---------------
