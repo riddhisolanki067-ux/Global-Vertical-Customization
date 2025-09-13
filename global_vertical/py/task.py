@@ -59,3 +59,42 @@ def get_session_user_initials(doc,method):
             "error": "Unable to fetch user initials",
             "details": str(e)
         }
+
+@frappe.whitelist()
+def get_checklist_child_data_html(docname):
+    """
+    Fetch child table data and return a mapping to dynamically
+    render checked and unchecked boxes in the print format without using JS.
+    """
+    try:
+        # Fetch parent record
+        parent_doc = frappe.get_all(
+            "Installation Checklist Status",
+            filters={"task": docname},
+            fields=["name"],
+            limit=1
+        )
+
+        if not parent_doc:
+            return {"status": "error", "message": "No record found with given docname in task field."}
+
+        parent_name = parent_doc[0].name
+        doc = frappe.get_doc("Installation Checklist Status", parent_name)
+
+        # Create dictionary with checked/unchecked boxes
+        checkbox_map = {}
+        for row in doc.get("installation_checklist", []):
+            checkbox_map[row.code] = {
+                "na": "&#x2611;" if row.checkbox_type == "na" else "&#x2610;",
+                "yes": "&#x2611;" if row.checkbox_type == "yes" else "&#x2610;",
+                "no": "&#x2611;" if row.checkbox_type == "no" else "&#x2610;"
+            }
+
+        return {
+            "status": "success",
+            "data": checkbox_map
+        }
+
+    except Exception as e:
+        frappe.log_error("Error in get_checklist_child_data_html", frappe.get_traceback())
+        return {"status": "error", "message": frappe.get_traceback()}

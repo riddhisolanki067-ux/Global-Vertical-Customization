@@ -1,6 +1,7 @@
 import frappe
 import json
 import base64
+import requests
 from frappe.utils.pdf import get_pdf
 
 @frappe.whitelist()
@@ -53,23 +54,44 @@ def set_installation_checklist_status(task_name, selected_items):
         return str(e)
     
     
-
 @frappe.whitelist()
-def generate_custom_pdf(name, html, filename):
-    # Generate PDF from HTML
-    pdf_data = get_pdf(html)
+def download_and_attach_task_pdf(task_name):
+    """
+    Directly download PDF from Frappe's default endpoint
+    and attach it to Task without re-generating.
+    """
+    try:
+        # Build the URL dynamically
+        site_url = frappe.utils.get_url()
+        pdf_url = f"{site_url}/api/method/frappe.utils.print_format.download_pdf"
+        params = {
+            "doctype": "Task",
+            "name": task_name,
+            "format": "MOM TABLE",
+            "no_letterhead": 1,
+            "letterhead": "No"
+        }
 
-    # Attach file to document
-    filedoc = frappe.get_doc({
-        "doctype": "File",
-        "file_name": filename,
-        "attached_to_doctype": "Task",
-        "attached_to_name": name,
-        "is_private": 0,
-        "content": pdf_data,
-    })
-    filedoc.save(ignore_permissions=True)
+        # Get the PDF file directly from endpoint
+        response = requests.get(pdf_url, params=params, cookies={'sid': frappe.session.sid})
+        response.raise_for_status()
+        
+        pdf_content = response.content
+        filename = f"{task_name}.pdf"
 
-    # Return base64 so client can download
-    return base64.b64encode(pdf_data).decode("utf-8")
-    
+        # Save as attachment
+        frappe.get_doc({
+            "doctype": "File",
+            "file_name": filename,
+            "attached_to_doctype": "Task",
+            "attached_to_name": task_name,
+            "is_private":0,
+            "content": pdf_content
+        }).insert(ignore_permissions=True)
+
+        # Return base64 to frontend for direct browser download
+        return base64.b64encode(pdf_content).decode('utf-8')
+
+    except Exception as e:
+        frappe.log_error(frappe.get_traceback(), "Task PDF Download Error")
+        raise e
