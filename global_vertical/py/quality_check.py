@@ -95,3 +95,13 @@ def download_and_attach_task_pdf(task_name):
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Task PDF Download Error")
         raise e
+
+
+import subprocess
+
+@frappe.whitelist()
+def check_wkhtml_version():
+    try:
+        return subprocess.getoutput("wkhtmltopdf --version")
+    except Exception as e:
+        return f"Error: {e}"

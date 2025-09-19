@@ -1,6 +1,7 @@
 import frappe
 from frappe.utils.pdf import get_pdf
 from frappe.utils.file_manager import save_file
+from frappe.utils import now
 import base64
 
 @frappe.whitelist()
@@ -23,6 +24,45 @@ def generate_pdf(html, page_name):
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "PDF Generation Error")
         frappe.throw("An error occurred while generating the PDF.")
+        
+        
+@frappe.whitelist()
+def generate_and_save_pdf(html, page_name, from_date=None, to_date=None):
+    """Generate PDF and save as attachment with MOM Submission Summary record"""
+    try:
+        # Generate PDF
+        if not from_date or not to_date:
+            frappe.msgprint("Both From Date and To Date are required to generate and save the PDF.")
+            return  
+        pdf_content = get_pdf(html)
+
+        # Create new MOM Submission Summary record
+        doc = frappe.new_doc("MOM Submission Summary")
+        doc.from_date = from_date
+        doc.to_date = to_date
+        doc.save(ignore_permissions=True)
+
+        # Create file attachment
+        filename = f"{page_name}_{now()}.pdf"
+        file_doc = save_file(
+            filename,
+            pdf_content,
+            "MOM Submission Summary",
+                doc.name,
+        )
+
+        # Update mom_report field
+        doc.mom_report = file_doc.file_url
+        doc.save(ignore_permissions=True)
+
+        frappe.db.commit()
+
+        return file_doc.file_url
+
+    except Exception as e:
+        frappe.log_error(message=frappe.get_traceback(), title="MOM PDF Generation Error")
+        frappe.throw(f"An error occurred while generating and saving the PDF")
+        
 
 
 @frappe.whitelist()

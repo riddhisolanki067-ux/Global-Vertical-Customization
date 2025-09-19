@@ -28,9 +28,9 @@ def get_session_user_initials(doc,method):
 
             current_number = auto_gen.mom_s_no
 
-            # If field is blank, start from 1234
+            # If field is blank, start from 1
             if not current_number:
-                current_number = 1234
+                current_number = 1
             else:
                 current_number = int(current_number)
 
@@ -40,7 +40,7 @@ def get_session_user_initials(doc,method):
             # ---- STEP 3: Increment the number ----
             next_number = current_number + 1
             if next_number > 9999:  # reset after 9999
-                next_number = 1234
+                next_number = 1
 
             # Update the Auto Generation Data record
             auto_gen.mom_s_no = next_number

@@ -71,61 +71,57 @@ frappe.pages['mom-submission-summa'].on_page_load = function(wrapper) {
 
 	// $(frappe.render_template("mom_submission_summa")).appendTo(page.body);
 
-	// Add printer icon button
+	// Add Print Button
     page.set_primary_action(__('Print'), function() {
-        generatePagePDF();
+        generatePagePDF(false, from_date, to_date); // Open in new tab
     }, 'printer');
+
+    // Add Download Button
+    page.set_secondary_action(__('Download'), function() {
+        generatePagePDF(true, from_date, to_date); // Download directly
+    });
+
 }
 
-
-function generatePagePDF() {
-    // Capture the content of the page
-    
-const pageContent = document.querySelector('#report_table').outerHTML;
+function generatePagePDF(isDownload = false, from_date = null, to_date = null) {
+    const pageContent = document.querySelector('#report_table').outerHTML;
 
     // Capture styles (ERPNext default + page styles)
     let styles = `
         <link rel="stylesheet" type="text/css" href="/assets/frappe/css/print_format.css">
         <style>
-			@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-			body {
-				font-family: 'Roboto', Arial, sans-serif;
-			}
+            @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+            body {
+                font-family: 'Roboto', Arial, sans-serif;
+            }
             table {
-				table-layout:fixed;
+                table-layout:fixed;
                 border-collapse: collapse;
                 width: 100%;
             }
             table, th, td {
                 font-size: 12px;
             }
-             @media print {
-            /* Keep only one border */
-            table, th, td {
-                border: 1px solid black !important;
-                border-collapse: collapse !important;
-            }
-            
-            table, th, td {
+            @media print {
+                table, th, td {
+                    border: 1px solid black !important;
+                    border-collapse: collapse !important;
+                }
+                table, th, td {
                 font-size: 12px;
                 border: 1px solid black;
                 padding: 8px; /* Added padding */
-                text-align: left;
+                    text-align: left;
+                }
+                .print-format table,
+                .print-format th,
+                .print-format td {
+                    border: none !important;
+                }
             }
-                
-            /* Remove any ERPNext default borders */
-            .print-format table, 
-            .print-format th, 
-            .print-format td {
-                border: none !important;
-            }
-        }
-				
         </style>
     `;
 
-    // Final HTML to send for PDF generation
     const finalHTML = `
         <html>
         <head>
@@ -138,18 +134,70 @@ const pageContent = document.querySelector('#report_table').outerHTML;
         </html>
     `;
 
-    frappe.call({
-        method: "global_vertical.global_vertical.page.mom_submission_summa.mom_submission_summa.generate_pdf",
-        args: {
-            html: finalHTML,
-            page_name: "MOM Submission Summary"
-        },
-        callback: function(r) {
-            if (r.message) {
-                window.open(r.message, '_blank');
-            } else {
-                frappe.msgprint(__('Failed to generate PDF.'));
+   
+
+
+
+    // Freeze UI while processing
+    frappe.dom.freeze(__('Generating PDF... Please wait'));
+
+    if (isDownload) {
+        frappe.call({
+            method: "global_vertical.global_vertical.page.mom_submission_summa.mom_submission_summa.generate_and_save_pdf",
+            args: {
+                html: finalHTML,
+                page_name: "MOM Submission Summary",
+                from_date: from_date,
+                to_date: to_date
+            },
+            callback: function (r) {
+                frappe.dom.unfreeze();
+
+                if (r.message) {
+                    const file_url = r.message;
+
+                    // Force download
+                    const a = document.createElement('a');
+                    a.href = file_url;
+                    a.download = "MOM_Submission_Summary.pdf";
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+
+                    frappe.show_alert({
+                        message: __("PDF has been generated and saved successfully!"),
+                        indicator: "green"
+                    }, 5);
+                } else {
+                    frappe.msgprint(__('Failed to generate and save PDF.'));
+                }
+            },
+            error: function () {
+                frappe.dom.unfreeze();
+                frappe.msgprint(__('An error occurred while generating the PDF.'));
             }
-        }
-    });
+        });
+
+    } else {
+        frappe.call({
+            method: "global_vertical.global_vertical.page.mom_submission_summa.mom_submission_summa.generate_pdf",
+            args: {
+                html: finalHTML,
+                page_name: "MOM Submission Summary"
+            },
+            callback: function (r) {
+                frappe.dom.unfreeze();
+
+                if (r.message) {
+                    window.open(r.message, '_blank');
+                } else {
+                    frappe.msgprint(__('Failed to generate PDF for printing.'));
+                }
+            },
+            error: function () {
+                frappe.dom.unfreeze();
+                frappe.msgprint(__('An error occurred while generating the PDF for print.'));
+            }
+        });
+    }
 }
