@@ -6,9 +6,11 @@
  "engine": "InnoDB",
  "field_order": [
   "from_date",
+  "service_engineer",
   "mom_report",
   "column_break_gfca",
-  "to_date"
+  "to_date",
+  "branch"
  ],
  "fields": [
   {
@@ -29,12 +31,24 @@
    "fieldname": "to_date",
    "fieldtype": "Date",
    "label": "To Date"
+  },
+  {
+   "fieldname": "service_engineer",
+   "fieldtype": "Link",
+   "label": "Service Engineer",
+   "options": "User"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-16 20:46:25.073086",
+ "modified": "2025-09-20 21:08:54.102641",
  "modified_by": "Administrator",
  "module": "Global-Vertical",
  "name": "MOM Submission Summary",

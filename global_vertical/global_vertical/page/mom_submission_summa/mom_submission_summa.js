@@ -7,6 +7,8 @@ frappe.pages['mom-submission-summa'].on_page_load = function(wrapper) {
 
 	var from_date = ''
 	var to_date = ''
+    var service_engineer = ''
+    var branch = ''
 
 	let f_date = page.add_field({
         label: 'From Date',
@@ -28,20 +30,44 @@ frappe.pages['mom-submission-summa'].on_page_load = function(wrapper) {
         }
     });
 
+    let se_field = page.add_field({
+        label: 'Service Engineer',
+        fieldtype: 'Link',
+        options: 'User',
+        fieldname: 'service_engineer',
+        change() {
+            service_engineer = se_field.get_value()
+            check_filters()
+        }
+    });
+
+    let b_field = page.add_field({
+        label: 'Branch',
+        fieldtype: 'Link',
+        options: 'Branch',
+        fieldname: 'branch',
+        change() {
+            branch = b_field.get_value()
+            check_filters()
+        }
+    });
+
     function check_filters(){
-        if(from_date !== null && to_date !== null ){
-            get_data(from_date, to_date);
+        if(from_date !== null && to_date !== null  && service_engineer !== null && branch !== null){
+            get_data(from_date, to_date, service_engineer, branch);
         } else {
-            get_data(null, null); // Pass null values to indicate filters are not applied
+            get_data(null, null, null, null); // Pass null values to indicate filters are not applied
         }
     }
 
-    function get_data(from_date, to_date){
+    function get_data(from_date, to_date, service_engineer, branch){
         frappe.call({
             method: 'global_vertical.global_vertical.page.mom_submission_summa.mom_submission_summa.get_mom_data',
             args: {
                 from_date: from_date,
-                to_date: to_date
+                to_date: to_date,
+                service_engineer: service_engineer,
+                branch: branch
             },
             callback: function (response) {
                 var momdata = response.message || [];
@@ -53,7 +79,8 @@ frappe.pages['mom-submission-summa'].on_page_load = function(wrapper) {
                 $(frappe.render_template("mom_submission_summa", {
                     momdata: momdata,
                     filter_from_date: formatDateForDisplay(from_date),
-                    filter_to_date: formatDateForDisplay(to_date)
+                    filter_to_date: formatDateForDisplay(to_date),
+                    filter_branch: branch
                 })).appendTo(page.body);
 
                 console.log("Filtered data:", response.message);
@@ -67,23 +94,23 @@ frappe.pages['mom-submission-summa'].on_page_load = function(wrapper) {
         let parts = dateStr.split("-");
         return `${parts[2]}-${parts[1]}-${parts[0]}`;
     }
-    get_data(null, null);
+    get_data(null, null, null, null); // Initial load without filters
 
 	// $(frappe.render_template("mom_submission_summa")).appendTo(page.body);
 
 	// Add Print Button
     page.set_primary_action(__('Print'), function() {
-        generatePagePDF(false, from_date, to_date); // Open in new tab
+        generatePagePDF(false, from_date, to_date, service_engineer, branch); // Open in new tab
     }, 'printer');
 
     // Add Download Button
     page.set_secondary_action(__('Download'), function() {
-        generatePagePDF(true, from_date, to_date); // Download directly
+        generatePagePDF(true, from_date, to_date, service_engineer, branch); // Download directly
     });
 
 }
 
-function generatePagePDF(isDownload = false, from_date = null, to_date = null) {
+function generatePagePDF(isDownload = false, from_date = null, to_date = null, service_engineer = null, branch = null) {
     const pageContent = document.querySelector('#report_table').outerHTML;
 
     // Capture styles (ERPNext default + page styles)
@@ -148,7 +175,9 @@ function generatePagePDF(isDownload = false, from_date = null, to_date = null) {
                 html: finalHTML,
                 page_name: "MOM Submission Summary",
                 from_date: from_date,
-                to_date: to_date
+                to_date: to_date,
+                service_engineer: service_engineer,
+                branch: branch
             },
             callback: function (r) {
                 frappe.dom.unfreeze();

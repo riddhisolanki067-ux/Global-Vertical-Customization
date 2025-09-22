@@ -3,54 +3,23 @@
     <!-- ROW 1 -->
     <tr>
         <td colspan="3" style="text-align: center; padding: 10px;">
-            <div style="display: inline-block; text-align: center;">
-                <!-- Logo Container -->
-                <div style="display: flex; align-items: center; justify-content: center; gap: 5px;">
-                    <!-- The "E" made of three horizontal bars -->
-                    <div style="display: flex; flex-direction: column; justify-content: space-between; height: 20px;">
-                        <div style="width: 15px; height: 4px; background-color: #4a4f55; border-radius: 2px;"></div>
-                        <div style="width: 15px; height: 4px; background-color: #4a4f55; border-radius: 2px;"></div>
-                        <div style="width: 15px; height: 4px; background-color: #4a4f55; border-radius: 2px;"></div>
-                    </div>
-
-                    <!-- ASA Text -->
-                    <div style="position: relative; font-weight: bold; font-size: 24px; display: flex; align-items: center;">
-                        <span style="color: #1f4c84;">A</span>
-                        <span style="color: #4a4f55;">S</span>
-                        <span style="color: #1f4c84;">A</span>
-                        <span style="font-size: 15px; position: absolute; top: -5px; right: -12px; color: #4a4f55;">®</span>
-                    </div>
-                </div>
-
-                <!-- Tagline -->
-                <div style="font-size: 10px; letter-spacing: 3px; color: #4a4f55; margin-top: 2px;">
-                    ELEVATORS
-                </div>
-            </div>
+            <span style="font-weight: bold;font-size: 18px;">EASA</span><br><span style="font-size: 10px;">ELEVATORS</span>
         </td>
 
-        <td colspan="9" style="text-align: center; font-size: 18px; font-weight: bold; background-color: #f3f3f3;">
+        <td colspan="9" style="text-align: center; font-size: 18px; font-weight: semibold; background-color: #f3f3f3;">
             MOM SUBMISSION SUMMARY REPORT
         </td>
 
         <td colspan="2" style="text-align: center; background-color: #f3f3f3;">MOM-SSR</td>
-        <td colspan="2" style="text-align: center;"></td>
+        <td class="docname" colspan="2" style="text-align: center;"></td>
     </tr>
 
     <!-- ROW 2 -->
     <tr>
-        <td colspan="3" style="text-align: center; font-size: 18px; font-weight: bold;">PCH</td>
+        <td colspan="3" style="text-align: center; font-size: 18px; font-weight: semibold;">PCH</td>
 
         <td colspan="9" style="text-align: center;">
-            <label style="font-size: 18px;">
-                <input type="checkbox" name="location" value="GGN"> GGN
-            </label>
-            <label style="margin-left: 30px; font-size: 18px;">
-                <input type="checkbox" name="location" value="NOIDA"> NOIDA
-            </label>
-            <label style="margin-left: 30px; font-size: 18px;">
-                <input type="checkbox" name="location" value="PUNJAB"> PUNJAB
-            </label>
+            {{filter_branch}}
         </td>
 
         <td colspan="2" style="text-align: center; background-color: #f3f3f3;">DATE</td>
@@ -59,7 +28,7 @@
 
     <!-- ROW 3 -->
     <tr>
-        <td colspan="3" style="text-align: center; background-color: #f3f3f3; font-size: 12px;">
+        <td colspan="3" style="text-align: center; background-color: #f3f3f3; font-size: 10px;">
             SUPERVISOR/MANAGER <br>NAME
         </td>
         
@@ -92,8 +61,8 @@
         <td colspan="2" style="text-align: center; border-top:None;background-color: #f3f3f3;">MOM NO</td>
         <td colspan="2" style="text-align: center;border-top:None;background-color: #f3f3f3;">ORDER NO</td>
         <td colspan="7" style="text-align: center;border-top:None;background-color: #f3f3f3;">ORDER NAME</td>
-        <td colspan="2" style="text-align: center;border-top:None;background-color: #f3f3f3;">DATE OF VISIT</td>
-        <td colspan="2" style="text-align: center;border-top:None;background-color: #f3f3f3; font-size: 10px;">FIELD CORRECTLY<br>(YES/NO)</td>
+        <td colspan="2" style="text-align: center;border-top:None;background-color: #f3f3f3;font-size: 10px;">DATE OF VISIT</td>
+        <td colspan="2" style="text-align: center;border-top:None;background-color: #f3f3f3; font-size: 8px;">FIELD CORRECTLY<br>(YES/NO)</td>
     </tr>
  
     <!-- DYNAMIC ROW -->
@@ -115,7 +84,7 @@
         <td colspan="3" style=" text-align: center;border-top:None;background-color: #f3f3f3;"></td>
         <td colspan="4" style="text-align: center; border-top:None;background-color: #f3f3f3;">SUBMITTED BY</td>
         <td colspan="7" style="text-align: center;border-top:None;background-color: #f3f3f3;">RECEIVED BY</td>
-        <td colspan="2" style=" text-align: center;border-top:None;background-color: #f3f3f3;">APPROVED BY</td>
+        <td colspan="2" style=" text-align: center;border-top:None;background-color: #f3f3f3;font-size: 10px;">APPROVED BY</td>
     </tr>
 
     <!-- BOTTOM ROW 2 -->
