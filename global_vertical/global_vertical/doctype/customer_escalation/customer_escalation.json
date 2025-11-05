@@ -1,0 +1,194 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-31 23:56:39.189417",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sno",
+  "open_date",
+  "closed_date",
+  "days_to_close",
+  "person_called",
+  "column_break_jdly",
+  "order_name",
+  "order_no",
+  "mobile",
+  "site_address",
+  "city",
+  "pch_section",
+  "noida",
+  "ggn",
+  "punjab",
+  "column_break_kudu",
+  "ei",
+  "ni",
+  "escalation_received_at_section",
+  "mdoho",
+  "pch",
+  "manager",
+  "column_break_jqvx",
+  "supervisor",
+  "coordinator"
+ ],
+ "fields": [
+  {
+   "fieldname": "sno",
+   "fieldtype": "Data",
+   "label": "SNO"
+  },
+  {
+   "fieldname": "days_to_close",
+   "fieldtype": "Data",
+   "label": "Days to Close"
+  },
+  {
+   "fieldname": "person_called",
+   "fieldtype": "Data",
+   "label": "Person Called"
+  },
+  {
+   "fieldname": "order_name",
+   "fieldtype": "Data",
+   "label": "Order Name"
+  },
+  {
+   "fieldname": "column_break_jdly",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "order_no",
+   "fieldtype": "Data",
+   "label": "Order No"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "site_address",
+   "fieldtype": "Data",
+   "label": "Site Address"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "escalation_received_at_section",
+   "fieldtype": "Section Break",
+   "label": "Escalation Received At"
+  },
+  {
+   "default": "0",
+   "fieldname": "mdoho",
+   "fieldtype": "Check",
+   "label": "MDO/HO"
+  },
+  {
+   "default": "0",
+   "fieldname": "pch",
+   "fieldtype": "Check",
+   "label": "PCH"
+  },
+  {
+   "default": "0",
+   "fieldname": "manager",
+   "fieldtype": "Check",
+   "label": "Manager"
+  },
+  {
+   "default": "0",
+   "fieldname": "supervisor",
+   "fieldtype": "Check",
+   "label": "Supervisor"
+  },
+  {
+   "default": "0",
+   "fieldname": "coordinator",
+   "fieldtype": "Check",
+   "label": "Coordinator"
+  },
+  {
+   "fieldname": "column_break_jqvx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "open_date",
+   "fieldtype": "Date",
+   "label": "Open Date"
+  },
+  {
+   "fieldname": "closed_date",
+   "fieldtype": "Date",
+   "label": "Closed Date"
+  },
+  {
+   "fieldname": "pch_section",
+   "fieldtype": "Section Break",
+   "label": "PCH"
+  },
+  {
+   "default": "0",
+   "fieldname": "noida",
+   "fieldtype": "Check",
+   "label": "Noida"
+  },
+  {
+   "default": "0",
+   "fieldname": "ggn",
+   "fieldtype": "Check",
+   "label": "GGN"
+  },
+  {
+   "default": "0",
+   "fieldname": "punjab",
+   "fieldtype": "Check",
+   "label": "Punjab"
+  },
+  {
+   "fieldname": "column_break_kudu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "ei",
+   "fieldtype": "Check",
+   "label": "EI"
+  },
+  {
+   "default": "0",
+   "fieldname": "ni",
+   "fieldtype": "Check",
+   "label": "NI"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-01 00:00:51.134478",
+ "modified_by": "Administrator",
+ "module": "Global-Vertical",
+ "name": "Customer Escalation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

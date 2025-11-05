@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-01 18:43:07.065795",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "specification",
+  "specification_1",
+  "customer_lift_nos",
+  "rate_per_lift",
+  "column_break_lujn",
+  "no_of_lifts",
+  "requested_amount",
+  "approved_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "specification",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Specification"
+  },
+  {
+   "fieldname": "specification_1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Specification 1"
+  },
+  {
+   "fieldname": "customer_lift_nos",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Lift NOs"
+  },
+  {
+   "fieldname": "rate_per_lift",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Rate Per Lift"
+  },
+  {
+   "fieldname": "column_break_lujn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "no_of_lifts",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "No of Lifts"
+  },
+  {
+   "fieldname": "requested_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Requested Amount"
+  },
+  {
+   "fieldname": "approved_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Approved Amount"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-01 18:45:08.905494",
+ "modified_by": "Administrator",
+ "module": "Global-Vertical",
+ "name": "Sub Contractor Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

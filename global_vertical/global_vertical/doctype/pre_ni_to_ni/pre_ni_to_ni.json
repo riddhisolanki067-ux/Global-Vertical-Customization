@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-30 22:29:23.082584",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ni_team_name",
+  "mobile_no",
+  "pre_ni_team_name",
+  "mobile_no1"
+ ],
+ "fields": [
+  {
+   "fieldname": "ni_team_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "NI Team Name"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "pre_ni_team_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pre NI Team Name"
+  },
+  {
+   "fieldname": "mobile_no1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile No"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-10-30 22:30:51.357078",
+ "modified_by": "Administrator",
+ "module": "Global-Vertical",
+ "name": "Pre NI to NI",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

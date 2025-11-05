@@ -1,0 +1,692 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-01 21:45:16.583428",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "h_date",
+  "ggn",
+  "noida",
+  "punjab",
+  "ftr",
+  "site_name",
+  "site_address",
+  "date",
+  "column_break_gkxe",
+  "order_no",
+  "date_closed",
+  "customer_lift_no",
+  "submitted_by",
+  "mobile",
+  "department",
+  "type_of_lift_section",
+  "lift_in_working_order",
+  "pax",
+  "load_kg",
+  "speedmps",
+  "mrl",
+  "column_break_hfdg",
+  "mr",
+  "home",
+  "pass",
+  "freight",
+  "car",
+  "dumb",
+  "bed",
+  "type_of_doors_section",
+  "coll",
+  "pco2",
+  "ptl2",
+  "ptr2",
+  "pco4",
+  "pco6",
+  "pco8",
+  "vbp",
+  "column_break_hokq",
+  "ifd",
+  "dw",
+  "dh",
+  "door_finish",
+  "glass_door",
+  "specifications_section",
+  "stops",
+  "front_opening",
+  "reverse_opening",
+  "deg_90_opening",
+  "sw",
+  "sd",
+  "pit",
+  "oh",
+  "travel",
+  "shaft_height",
+  "column_break_dxcz",
+  "cw",
+  "cd",
+  "ch",
+  "pmsm_gearless",
+  "geared",
+  "hydraulic",
+  "sheave_dia",
+  "groove_dia",
+  "no_of_groove",
+  "no_of_ropes",
+  "rope_dia",
+  "machine_make",
+  "column_break_ifvd",
+  "gear_box_make",
+  "motor_kw",
+  "control_make",
+  "drive_kw",
+  "drive_make",
+  "roping_1_1",
+  "roping_2_1",
+  "roping_4_1",
+  "type_of_amc_service_section",
+  "c_amc",
+  "s_amc",
+  "n_amc",
+  "warranty",
+  "ard_make",
+  "no_of_battery",
+  "column_break_merx",
+  "battery_ah",
+  "date_of_ho_to_customer",
+  "date_of_ho_to_service",
+  "area_of_concern_section",
+  "design",
+  "factory",
+  "quality",
+  "vendor",
+  "gad_drawing",
+  "column_break_djux",
+  "other",
+  "customer",
+  "mechanical",
+  "electrical",
+  "man_hours_lost_extra_cost_section",
+  "man_hours_lost",
+  "material_cost_if_any",
+  "welding_cost_if_any"
+ ],
+ "fields": [
+  {
+   "fieldname": "h_date",
+   "fieldtype": "Date",
+   "label": "H Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "ggn",
+   "fieldtype": "Check",
+   "label": "GGN"
+  },
+  {
+   "default": "0",
+   "fieldname": "noida",
+   "fieldtype": "Check",
+   "label": "NOIDA"
+  },
+  {
+   "default": "0",
+   "fieldname": "punjab",
+   "fieldtype": "Check",
+   "label": "PUNJAB"
+  },
+  {
+   "fieldname": "ftr",
+   "fieldtype": "Data",
+   "label": "FTR"
+  },
+  {
+   "fieldname": "site_name",
+   "fieldtype": "Data",
+   "label": "Site Name"
+  },
+  {
+   "fieldname": "site_address",
+   "fieldtype": "Data",
+   "label": "Site Address"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_gkxe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "order_no",
+   "fieldtype": "Data",
+   "label": "Order No"
+  },
+  {
+   "fieldname": "date_closed",
+   "fieldtype": "Date",
+   "label": "Date Closed"
+  },
+  {
+   "fieldname": "customer_lift_no",
+   "fieldtype": "Data",
+   "label": "Customer Lift No"
+  },
+  {
+   "fieldname": "submitted_by",
+   "fieldtype": "Link",
+   "label": "Submitted By",
+   "options": "User"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "default": "0",
+   "fieldname": "coll",
+   "fieldtype": "Check",
+   "label": "COLL"
+  },
+  {
+   "default": "0",
+   "fieldname": "pco2",
+   "fieldtype": "Check",
+   "label": "2PCO"
+  },
+  {
+   "default": "0",
+   "fieldname": "ptl2",
+   "fieldtype": "Check",
+   "label": "2P/TL"
+  },
+  {
+   "default": "0",
+   "fieldname": "pco4",
+   "fieldtype": "Check",
+   "label": "4PCO"
+  },
+  {
+   "default": "0",
+   "fieldname": "pco6",
+   "fieldtype": "Check",
+   "label": "6PCO"
+  },
+  {
+   "default": "0",
+   "fieldname": "pco8",
+   "fieldtype": "Check",
+   "label": "8PCO"
+  },
+  {
+   "default": "0",
+   "fieldname": "vbp",
+   "fieldtype": "Check",
+   "label": "VBP"
+  },
+  {
+   "fieldname": "column_break_hokq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "ifd",
+   "fieldtype": "Check",
+   "label": "IFD"
+  },
+  {
+   "fieldname": "dw",
+   "fieldtype": "Data",
+   "label": "DW"
+  },
+  {
+   "fieldname": "dh",
+   "fieldtype": "Data",
+   "label": "DH"
+  },
+  {
+   "fieldname": "door_finish",
+   "fieldtype": "Data",
+   "label": "Door Finish"
+  },
+  {
+   "default": "0",
+   "fieldname": "glass_door",
+   "fieldtype": "Check",
+   "label": "Glass Door"
+  },
+  {
+   "default": "0",
+   "fieldname": "ptr2",
+   "fieldtype": "Check",
+   "label": "2P/TR"
+  },
+  {
+   "fieldname": "type_of_doors_section",
+   "fieldtype": "Section Break",
+   "label": "Type of Doors"
+  },
+  {
+   "fieldname": "type_of_lift_section",
+   "fieldtype": "Section Break",
+   "label": "Type of Lift"
+  },
+  {
+   "fieldname": "lift_in_working_order",
+   "fieldtype": "Data",
+   "label": "Lift in Working Order"
+  },
+  {
+   "fieldname": "load_kg",
+   "fieldtype": "Data",
+   "label": "Load KG"
+  },
+  {
+   "fieldname": "speedmps",
+   "fieldtype": "Data",
+   "label": "Speed(mps)"
+  },
+  {
+   "default": "0",
+   "fieldname": "mrl",
+   "fieldtype": "Check",
+   "label": "MRL"
+  },
+  {
+   "default": "0",
+   "fieldname": "mr",
+   "fieldtype": "Check",
+   "label": "MR"
+  },
+  {
+   "fieldname": "column_break_hfdg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "home",
+   "fieldtype": "Check",
+   "label": "Home"
+  },
+  {
+   "default": "0",
+   "fieldname": "pass",
+   "fieldtype": "Check",
+   "label": "Pass"
+  },
+  {
+   "default": "0",
+   "fieldname": "freight",
+   "fieldtype": "Check",
+   "label": "Freight"
+  },
+  {
+   "default": "0",
+   "fieldname": "car",
+   "fieldtype": "Check",
+   "label": "Car"
+  },
+  {
+   "default": "0",
+   "fieldname": "dumb",
+   "fieldtype": "Check",
+   "label": "Dumb"
+  },
+  {
+   "default": "0",
+   "fieldname": "bed",
+   "fieldtype": "Check",
+   "label": "Bed"
+  },
+  {
+   "fieldname": "specifications_section",
+   "fieldtype": "Section Break",
+   "label": "Specifications"
+  },
+  {
+   "fieldname": "stops",
+   "fieldtype": "Data",
+   "label": "Stops"
+  },
+  {
+   "fieldname": "front_opening",
+   "fieldtype": "Data",
+   "label": "Front Opening"
+  },
+  {
+   "fieldname": "reverse_opening",
+   "fieldtype": "Data",
+   "label": "Reverse Opening"
+  },
+  {
+   "fieldname": "deg_90_opening",
+   "fieldtype": "Data",
+   "label": "90 DEG Opening"
+  },
+  {
+   "fieldname": "sw",
+   "fieldtype": "Data",
+   "label": "SW"
+  },
+  {
+   "fieldname": "sd",
+   "fieldtype": "Data",
+   "label": "SD"
+  },
+  {
+   "fieldname": "pit",
+   "fieldtype": "Data",
+   "label": "PIT"
+  },
+  {
+   "fieldname": "oh",
+   "fieldtype": "Data",
+   "label": "OH"
+  },
+  {
+   "fieldname": "travel",
+   "fieldtype": "Data",
+   "label": "Travel"
+  },
+  {
+   "fieldname": "shaft_height",
+   "fieldtype": "Data",
+   "label": "Shaft Height"
+  },
+  {
+   "fieldname": "column_break_dxcz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cw",
+   "fieldtype": "Data",
+   "label": "CW"
+  },
+  {
+   "fieldname": "cd",
+   "fieldtype": "Data",
+   "label": "CD"
+  },
+  {
+   "fieldname": "ch",
+   "fieldtype": "Data",
+   "label": "CH"
+  },
+  {
+   "default": "0",
+   "fieldname": "pmsm_gearless",
+   "fieldtype": "Check",
+   "label": "PMSM Gearless"
+  },
+  {
+   "default": "0",
+   "fieldname": "geared",
+   "fieldtype": "Check",
+   "label": "Geared"
+  },
+  {
+   "default": "0",
+   "fieldname": "hydraulic",
+   "fieldtype": "Check",
+   "label": "Hydraulic"
+  },
+  {
+   "default": "0",
+   "fieldname": "sheave_dia",
+   "fieldtype": "Check",
+   "label": "Sheave Dia"
+  },
+  {
+   "default": "0",
+   "fieldname": "groove_dia",
+   "fieldtype": "Check",
+   "label": "Groove Dia"
+  },
+  {
+   "default": "0",
+   "fieldname": "no_of_groove",
+   "fieldtype": "Check",
+   "label": "No of Groove"
+  },
+  {
+   "fieldname": "no_of_ropes",
+   "fieldtype": "Data",
+   "label": "No of Ropes"
+  },
+  {
+   "fieldname": "rope_dia",
+   "fieldtype": "Data",
+   "label": "Rope Dia"
+  },
+  {
+   "fieldname": "machine_make",
+   "fieldtype": "Data",
+   "label": "Machine Make"
+  },
+  {
+   "fieldname": "column_break_ifvd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gear_box_make",
+   "fieldtype": "Data",
+   "label": "Gear Box Make"
+  },
+  {
+   "fieldname": "motor_kw",
+   "fieldtype": "Data",
+   "label": "Motor KW"
+  },
+  {
+   "fieldname": "control_make",
+   "fieldtype": "Data",
+   "label": "Control Make"
+  },
+  {
+   "fieldname": "drive_kw",
+   "fieldtype": "Data",
+   "label": "Drive KW"
+  },
+  {
+   "fieldname": "drive_make",
+   "fieldtype": "Data",
+   "label": "Drive Make"
+  },
+  {
+   "default": "0",
+   "fieldname": "roping_1_1",
+   "fieldtype": "Check",
+   "label": "Roping 1:1"
+  },
+  {
+   "default": "0",
+   "fieldname": "roping_2_1",
+   "fieldtype": "Check",
+   "label": "Roping 2:1"
+  },
+  {
+   "fieldname": "type_of_amc_service_section",
+   "fieldtype": "Section Break",
+   "label": "Type of AMC Service"
+  },
+  {
+   "default": "0",
+   "fieldname": "c_amc",
+   "fieldtype": "Check",
+   "label": "C-AMC"
+  },
+  {
+   "default": "0",
+   "fieldname": "s_amc",
+   "fieldtype": "Check",
+   "label": "S-AMC"
+  },
+  {
+   "default": "0",
+   "fieldname": "n_amc",
+   "fieldtype": "Check",
+   "label": "N-AMC"
+  },
+  {
+   "default": "0",
+   "fieldname": "warranty",
+   "fieldtype": "Check",
+   "label": "Warranty"
+  },
+  {
+   "fieldname": "ard_make",
+   "fieldtype": "Data",
+   "label": "ARD Make"
+  },
+  {
+   "fieldname": "no_of_battery",
+   "fieldtype": "Data",
+   "label": "No of Battery"
+  },
+  {
+   "fieldname": "column_break_merx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "battery_ah",
+   "fieldtype": "Data",
+   "label": "Battery AH"
+  },
+  {
+   "fieldname": "date_of_ho_to_customer",
+   "fieldtype": "Date",
+   "label": "Date of HO to Customer"
+  },
+  {
+   "fieldname": "date_of_ho_to_service",
+   "fieldtype": "Date",
+   "label": "Date of HO to Service"
+  },
+  {
+   "fieldname": "area_of_concern_section",
+   "fieldtype": "Section Break",
+   "label": "Area of Concern"
+  },
+  {
+   "default": "0",
+   "fieldname": "design",
+   "fieldtype": "Check",
+   "label": "Design"
+  },
+  {
+   "default": "0",
+   "fieldname": "factory",
+   "fieldtype": "Check",
+   "label": "Factory"
+  },
+  {
+   "default": "0",
+   "fieldname": "quality",
+   "fieldtype": "Check",
+   "label": "Quality"
+  },
+  {
+   "default": "0",
+   "fieldname": "vendor",
+   "fieldtype": "Check",
+   "label": "Vendor"
+  },
+  {
+   "default": "0",
+   "fieldname": "gad_drawing",
+   "fieldtype": "Check",
+   "label": "Gad Drawing"
+  },
+  {
+   "fieldname": "column_break_djux",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "other",
+   "fieldtype": "Check",
+   "label": "Other"
+  },
+  {
+   "default": "0",
+   "fieldname": "customer",
+   "fieldtype": "Check",
+   "label": "Customer"
+  },
+  {
+   "default": "0",
+   "fieldname": "mechanical",
+   "fieldtype": "Check",
+   "label": "Mechanical"
+  },
+  {
+   "default": "0",
+   "fieldname": "electrical",
+   "fieldtype": "Check",
+   "label": "Electrical"
+  },
+  {
+   "fieldname": "man_hours_lost_extra_cost_section",
+   "fieldtype": "Section Break",
+   "label": "Man Hours Lost & Extra Cost"
+  },
+  {
+   "fieldname": "man_hours_lost",
+   "fieldtype": "Data",
+   "label": "Man Hours Lost"
+  },
+  {
+   "fieldname": "material_cost_if_any",
+   "fieldtype": "Float",
+   "label": "Material Cost If Any"
+  },
+  {
+   "fieldname": "welding_cost_if_any",
+   "fieldtype": "Float",
+   "label": "Welding Cost If Any"
+  },
+  {
+   "fieldname": "pax",
+   "fieldtype": "Data",
+   "label": "Pax"
+  },
+  {
+   "default": "0",
+   "fieldname": "roping_4_1",
+   "fieldtype": "Check",
+   "label": "Roping 4:1"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-02 13:21:36.747616",
+ "modified_by": "Administrator",
+ "module": "Global-Vertical",
+ "name": "Field Trouble Report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,314 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-04 22:27:01.510955",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_yom9",
+  "easa_job_no",
+  "job_name",
+  "lift_no",
+  "order_date",
+  "column_break_olr",
+  "site_address",
+  "tower",
+  "gad_approval_date",
+  "type_of_lift_section",
+  "mrl",
+  "mr",
+  "home",
+  "pass",
+  "freight",
+  "car",
+  "column_break_pgb",
+  "dw",
+  "vbp",
+  "panel",
+  "tl_tr",
+  "coll",
+  "p4_pco6",
+  "section_break_xrf",
+  "date_of_visit",
+  "site_ready_up_to_which_floor",
+  "expected_site_ready_date",
+  "column_break_qnb",
+  "supervisor",
+  "customer_rep_name",
+  "mobile_no",
+  "specs_section",
+  "pax",
+  "kg",
+  "stops",
+  "speed",
+  "pitgad",
+  "pitsite",
+  "column_break_pwox",
+  "travelgad",
+  "travelsite",
+  "ohgad",
+  "ohsite",
+  "shgad",
+  "shsite"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_yom9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "easa_job_no",
+   "fieldtype": "Data",
+   "label": "EASA Job No"
+  },
+  {
+   "fieldname": "job_name",
+   "fieldtype": "Data",
+   "label": "Job Name"
+  },
+  {
+   "fieldname": "lift_no",
+   "fieldtype": "Data",
+   "label": "Lift No"
+  },
+  {
+   "fieldname": "order_date",
+   "fieldtype": "Date",
+   "label": "Order Date"
+  },
+  {
+   "fieldname": "column_break_olr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "site_address",
+   "fieldtype": "Data",
+   "label": "Site Address"
+  },
+  {
+   "fieldname": "tower",
+   "fieldtype": "Data",
+   "label": "Tower"
+  },
+  {
+   "fieldname": "gad_approval_date",
+   "fieldtype": "Date",
+   "label": "GAD Approval Date"
+  },
+  {
+   "fieldname": "type_of_lift_section",
+   "fieldtype": "Section Break",
+   "label": "Type of Lift"
+  },
+  {
+   "default": "0",
+   "fieldname": "mrl",
+   "fieldtype": "Check",
+   "label": "MRL"
+  },
+  {
+   "default": "0",
+   "fieldname": "mr",
+   "fieldtype": "Check",
+   "label": "MR"
+  },
+  {
+   "default": "0",
+   "fieldname": "home",
+   "fieldtype": "Check",
+   "label": "Home"
+  },
+  {
+   "default": "0",
+   "fieldname": "pass",
+   "fieldtype": "Check",
+   "label": "Pass"
+  },
+  {
+   "default": "0",
+   "fieldname": "freight",
+   "fieldtype": "Check",
+   "label": "Freight"
+  },
+  {
+   "default": "0",
+   "fieldname": "car",
+   "fieldtype": "Check",
+   "label": "Car"
+  },
+  {
+   "fieldname": "column_break_pgb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "dw",
+   "fieldtype": "Check",
+   "label": "DW"
+  },
+  {
+   "default": "0",
+   "fieldname": "vbp",
+   "fieldtype": "Check",
+   "label": "VBP"
+  },
+  {
+   "default": "0",
+   "fieldname": "coll",
+   "fieldtype": "Check",
+   "label": "Coll"
+  },
+  {
+   "default": "0",
+   "fieldname": "p4_pco6",
+   "fieldtype": "Check",
+   "label": "4/6 Panel"
+  },
+  {
+   "fieldname": "section_break_xrf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date_of_visit",
+   "fieldtype": "Date",
+   "label": "Date of Visit"
+  },
+  {
+   "fieldname": "site_ready_up_to_which_floor",
+   "fieldtype": "Data",
+   "label": "Site Ready Up to Which Floor"
+  },
+  {
+   "fieldname": "expected_site_ready_date",
+   "fieldtype": "Date",
+   "label": "Expected Site Ready Date"
+  },
+  {
+   "fieldname": "column_break_qnb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "supervisor",
+   "fieldtype": "Data",
+   "label": "Supervisor"
+  },
+  {
+   "fieldname": "customer_rep_name",
+   "fieldtype": "Link",
+   "label": "Customer Rep Name",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No"
+  },
+  {
+   "default": "0",
+   "fieldname": "panel",
+   "fieldtype": "Check",
+   "label": "2 Panel"
+  },
+  {
+   "default": "0",
+   "fieldname": "tl_tr",
+   "fieldtype": "Check",
+   "label": "TL/TR"
+  },
+  {
+   "fieldname": "specs_section",
+   "fieldtype": "Section Break",
+   "label": "Specs"
+  },
+  {
+   "fieldname": "pax",
+   "fieldtype": "Data",
+   "label": "Pax"
+  },
+  {
+   "fieldname": "kg",
+   "fieldtype": "Data",
+   "label": "Kg"
+  },
+  {
+   "fieldname": "stops",
+   "fieldtype": "Data",
+   "label": "Stops"
+  },
+  {
+   "fieldname": "speed",
+   "fieldtype": "Data",
+   "label": "Speed"
+  },
+  {
+   "fieldname": "pitgad",
+   "fieldtype": "Data",
+   "label": "Pit(GAD)"
+  },
+  {
+   "fieldname": "pitsite",
+   "fieldtype": "Data",
+   "label": "Pit(SITE)"
+  },
+  {
+   "fieldname": "travelgad",
+   "fieldtype": "Data",
+   "label": "Travel(GAD)"
+  },
+  {
+   "fieldname": "travelsite",
+   "fieldtype": "Data",
+   "label": "Travel(SITE)"
+  },
+  {
+   "fieldname": "ohgad",
+   "fieldtype": "Data",
+   "label": "OH(GAD)"
+  },
+  {
+   "fieldname": "ohsite",
+   "fieldtype": "Data",
+   "label": "OH(SITE)"
+  },
+  {
+   "fieldname": "shgad",
+   "fieldtype": "Data",
+   "label": "SH(GAD)"
+  },
+  {
+   "fieldname": "shsite",
+   "fieldtype": "Data",
+   "label": "SH(SITE)"
+  },
+  {
+   "fieldname": "column_break_pwox",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-04 22:39:06.521493",
+ "modified_by": "Administrator",
+ "module": "Global-Vertical",
+ "name": "Front Final Site Checking Customer Scope of Work",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

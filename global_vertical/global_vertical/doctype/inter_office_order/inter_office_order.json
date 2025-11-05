@@ -1,0 +1,536 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-02 15:28:10.322181",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "h_date",
+  "ni",
+  "ei",
+  "ggn",
+  "noida",
+  "punjab",
+  "ioo",
+  "date",
+  "date_closed",
+  "column_break_cxbs",
+  "order_name",
+  "order_no",
+  "site_address",
+  "customer_lift_no",
+  "submitted_by",
+  "mobile",
+  "in_gad_section",
+  "sw",
+  "sd",
+  "pit",
+  "oh",
+  "column_break_yirx",
+  "travel",
+  "shaft_ht",
+  "door_width",
+  "door_height",
+  "at_site_section",
+  "sw1",
+  "sd1",
+  "pit1",
+  "oh1",
+  "column_break_piui",
+  "travel1",
+  "shaft_ht1",
+  "door_width1",
+  "door_height1",
+  "type_of_lift_section",
+  "pax",
+  "load_kg",
+  "speed",
+  "mrl",
+  "mr",
+  "column_break_rbgb",
+  "pass",
+  "home",
+  "freight",
+  "car",
+  "dw",
+  "type_of_doors_section",
+  "coll",
+  "pco2",
+  "ptl_tr",
+  "pco4",
+  "vbp",
+  "column_break_qbth",
+  "stops",
+  "front_opening",
+  "reverse_opening",
+  "deg_90_opening",
+  "specifications_section",
+  "roping_1_1",
+  "roping_2_1",
+  "roping_4_1",
+  "machine_make",
+  "pmsm_gear_less",
+  "column_break_ugeq",
+  "geared",
+  "motor_kw",
+  "control_make",
+  "drive_kw",
+  "type_of_amc_service_section",
+  "easa_royal",
+  "easa_elite",
+  "column_break_drif",
+  "easa_prime",
+  "warantty",
+  "section_break_nbce",
+  "description_of_material"
+ ],
+ "fields": [
+  {
+   "fieldname": "h_date",
+   "fieldtype": "Date",
+   "label": "H Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "ni",
+   "fieldtype": "Check",
+   "label": "NI"
+  },
+  {
+   "default": "0",
+   "fieldname": "ei",
+   "fieldtype": "Check",
+   "label": "EI"
+  },
+  {
+   "default": "0",
+   "fieldname": "ggn",
+   "fieldtype": "Check",
+   "label": "GGN"
+  },
+  {
+   "default": "0",
+   "fieldname": "noida",
+   "fieldtype": "Check",
+   "label": "NOIDA"
+  },
+  {
+   "default": "0",
+   "fieldname": "punjab",
+   "fieldtype": "Check",
+   "label": "PUNJAB"
+  },
+  {
+   "fieldname": "ioo",
+   "fieldtype": "Data",
+   "label": "IOO"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "date_closed",
+   "fieldtype": "Date",
+   "label": "Date Closed"
+  },
+  {
+   "fieldname": "column_break_cxbs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "order_name",
+   "fieldtype": "Data",
+   "label": "Order Name"
+  },
+  {
+   "fieldname": "order_no",
+   "fieldtype": "Data",
+   "label": "Order No"
+  },
+  {
+   "fieldname": "site_address",
+   "fieldtype": "Data",
+   "label": "Site Address"
+  },
+  {
+   "fieldname": "customer_lift_no",
+   "fieldtype": "Data",
+   "label": "Customer Lift No"
+  },
+  {
+   "fieldname": "submitted_by",
+   "fieldtype": "Link",
+   "label": "Submitted By",
+   "options": "User"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "in_gad_section",
+   "fieldtype": "Section Break",
+   "label": "IN GAD"
+  },
+  {
+   "fieldname": "sw",
+   "fieldtype": "Data",
+   "label": "SW"
+  },
+  {
+   "fieldname": "sd",
+   "fieldtype": "Data",
+   "label": "SD"
+  },
+  {
+   "fieldname": "pit",
+   "fieldtype": "Data",
+   "label": "PIT"
+  },
+  {
+   "fieldname": "oh",
+   "fieldtype": "Data",
+   "label": "OH"
+  },
+  {
+   "fieldname": "column_break_yirx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "travel",
+   "fieldtype": "Data",
+   "label": "TRAVEL"
+  },
+  {
+   "fieldname": "shaft_ht",
+   "fieldtype": "Data",
+   "label": "SHAFT HT"
+  },
+  {
+   "fieldname": "door_width",
+   "fieldtype": "Data",
+   "label": "DOOR WIDTH"
+  },
+  {
+   "fieldname": "door_height",
+   "fieldtype": "Data",
+   "label": "DOOR HEIGHT"
+  },
+  {
+   "fieldname": "at_site_section",
+   "fieldtype": "Section Break",
+   "label": "AT SITE"
+  },
+  {
+   "fieldname": "sw1",
+   "fieldtype": "Data",
+   "label": "SW"
+  },
+  {
+   "fieldname": "sd1",
+   "fieldtype": "Data",
+   "label": "SD"
+  },
+  {
+   "fieldname": "pit1",
+   "fieldtype": "Data",
+   "label": "PIT"
+  },
+  {
+   "fieldname": "oh1",
+   "fieldtype": "Data",
+   "label": "OH"
+  },
+  {
+   "fieldname": "column_break_piui",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "travel1",
+   "fieldtype": "Data",
+   "label": "TRAVEL"
+  },
+  {
+   "fieldname": "shaft_ht1",
+   "fieldtype": "Data",
+   "label": "SHAFT HT"
+  },
+  {
+   "fieldname": "door_width1",
+   "fieldtype": "Data",
+   "label": "DOOR WIDTH"
+  },
+  {
+   "fieldname": "door_height1",
+   "fieldtype": "Data",
+   "label": "DOOR HEIGHT"
+  },
+  {
+   "fieldname": "type_of_lift_section",
+   "fieldtype": "Section Break",
+   "label": "Type of Lift"
+  },
+  {
+   "default": "0",
+   "fieldname": "pax",
+   "fieldtype": "Check",
+   "label": "Pax"
+  },
+  {
+   "default": "0",
+   "fieldname": "load_kg",
+   "fieldtype": "Check",
+   "label": "Load KG"
+  },
+  {
+   "default": "0",
+   "fieldname": "speed",
+   "fieldtype": "Check",
+   "label": "Speed"
+  },
+  {
+   "default": "0",
+   "fieldname": "mrl",
+   "fieldtype": "Check",
+   "label": "MRL"
+  },
+  {
+   "default": "0",
+   "fieldname": "mr",
+   "fieldtype": "Check",
+   "label": "MR"
+  },
+  {
+   "fieldname": "column_break_rbgb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "pass",
+   "fieldtype": "Check",
+   "label": "Pass"
+  },
+  {
+   "default": "0",
+   "fieldname": "home",
+   "fieldtype": "Check",
+   "label": "Home"
+  },
+  {
+   "default": "0",
+   "fieldname": "freight",
+   "fieldtype": "Check",
+   "label": "Freight"
+  },
+  {
+   "default": "0",
+   "fieldname": "car",
+   "fieldtype": "Check",
+   "label": "Car"
+  },
+  {
+   "default": "0",
+   "fieldname": "dw",
+   "fieldtype": "Check",
+   "label": "DW"
+  },
+  {
+   "fieldname": "type_of_doors_section",
+   "fieldtype": "Section Break",
+   "label": "Type of Doors"
+  },
+  {
+   "default": "0",
+   "fieldname": "coll",
+   "fieldtype": "Check",
+   "label": "Coll"
+  },
+  {
+   "default": "0",
+   "fieldname": "pco2",
+   "fieldtype": "Check",
+   "label": "2PCO"
+  },
+  {
+   "default": "0",
+   "fieldname": "pco4",
+   "fieldtype": "Check",
+   "label": "4PCO"
+  },
+  {
+   "default": "0",
+   "fieldname": "vbp",
+   "fieldtype": "Check",
+   "label": "VBP"
+  },
+  {
+   "fieldname": "column_break_qbth",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "stops",
+   "fieldtype": "Check",
+   "label": "Stops"
+  },
+  {
+   "default": "0",
+   "fieldname": "front_opening",
+   "fieldtype": "Check",
+   "label": "Front Opening"
+  },
+  {
+   "default": "0",
+   "fieldname": "reverse_opening",
+   "fieldtype": "Check",
+   "label": "Reverse Opening"
+  },
+  {
+   "default": "0",
+   "fieldname": "deg_90_opening",
+   "fieldtype": "Check",
+   "label": "90 DEG Opening"
+  },
+  {
+   "fieldname": "specifications_section",
+   "fieldtype": "Section Break",
+   "label": "Specifications"
+  },
+  {
+   "default": "0",
+   "fieldname": "roping_1_1",
+   "fieldtype": "Check",
+   "label": "Roping 1:1"
+  },
+  {
+   "default": "0",
+   "fieldname": "roping_2_1",
+   "fieldtype": "Check",
+   "label": "Roping 2:1"
+  },
+  {
+   "default": "0",
+   "fieldname": "roping_4_1",
+   "fieldtype": "Check",
+   "label": "Roping 4 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "machine_make",
+   "fieldtype": "Check",
+   "label": "Machine Make"
+  },
+  {
+   "default": "0",
+   "fieldname": "pmsm_gear_less",
+   "fieldtype": "Check",
+   "label": "PMSM Gear Less"
+  },
+  {
+   "fieldname": "column_break_ugeq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "geared",
+   "fieldtype": "Check",
+   "label": "Geared"
+  },
+  {
+   "default": "0",
+   "fieldname": "motor_kw",
+   "fieldtype": "Check",
+   "label": "Motor KW"
+  },
+  {
+   "default": "0",
+   "fieldname": "control_make",
+   "fieldtype": "Check",
+   "label": "Control Make"
+  },
+  {
+   "default": "0",
+   "fieldname": "drive_kw",
+   "fieldtype": "Check",
+   "label": "Drive KW"
+  },
+  {
+   "fieldname": "type_of_amc_service_section",
+   "fieldtype": "Section Break",
+   "label": "Type of AMC Service"
+  },
+  {
+   "default": "0",
+   "fieldname": "easa_royal",
+   "fieldtype": "Check",
+   "label": "EASA Royal"
+  },
+  {
+   "default": "0",
+   "fieldname": "easa_elite",
+   "fieldtype": "Check",
+   "label": "EASA Elite"
+  },
+  {
+   "fieldname": "column_break_drif",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "easa_prime",
+   "fieldtype": "Check",
+   "label": "EASA Prime"
+  },
+  {
+   "default": "0",
+   "fieldname": "warantty",
+   "fieldtype": "Check",
+   "label": "Warantty"
+  },
+  {
+   "fieldname": "section_break_nbce",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description_of_material",
+   "fieldtype": "Table",
+   "label": "Description of Material",
+   "options": "Description of Material"
+  },
+  {
+   "default": "0",
+   "fieldname": "ptl_tr",
+   "fieldtype": "Check",
+   "label": "2PTL-TR"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-02 17:18:44.168240",
+ "modified_by": "Administrator",
+ "module": "Global-Vertical",
+ "name": "Inter Office Order",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

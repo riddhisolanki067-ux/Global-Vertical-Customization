@@ -1,0 +1,182 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-29 22:01:34.060373",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_sub_contractor",
+  "address",
+  "aadhar_no",
+  "pan_card_no",
+  "mobile_no",
+  "no_of_worker",
+  "date_of_start_of_installation",
+  "date_of_completion_of_installation",
+  "column_break_jfpx",
+  "wo_no",
+  "date",
+  "job_no",
+  "branch_code",
+  "site_name",
+  "site_address",
+  "payment_terms",
+  "section_break_brsd",
+  "scope_of_work",
+  "section_break_zwsd",
+  "prepared_by",
+  "approved_by",
+  "column_break_ckfs",
+  "accepted_by",
+  "contractor"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_sub_contractor",
+   "fieldtype": "Data",
+   "label": "Name of Sub Contractor"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "aadhar_no",
+   "fieldtype": "Data",
+   "label": "Aadhar No."
+  },
+  {
+   "fieldname": "pan_card_no",
+   "fieldtype": "Data",
+   "label": "PAN Card No."
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No."
+  },
+  {
+   "fieldname": "no_of_worker",
+   "fieldtype": "Int",
+   "label": "No of Workers"
+  },
+  {
+   "fieldname": "date_of_start_of_installation",
+   "fieldtype": "Date",
+   "label": "Date of start of Installation"
+  },
+  {
+   "fieldname": "date_of_completion_of_installation",
+   "fieldtype": "Date",
+   "label": "Date of completion of Installation"
+  },
+  {
+   "fieldname": "column_break_jfpx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "wo_no",
+   "fieldtype": "Data",
+   "label": "WO NO"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "job_no",
+   "fieldtype": "Data",
+   "label": "Job No"
+  },
+  {
+   "fieldname": "branch_code",
+   "fieldtype": "Data",
+   "label": "Branch Code"
+  },
+  {
+   "fieldname": "site_name",
+   "fieldtype": "Data",
+   "label": "Site Name"
+  },
+  {
+   "fieldname": "site_address",
+   "fieldtype": "Data",
+   "label": "Site Address"
+  },
+  {
+   "fieldname": "payment_terms",
+   "fieldtype": "Small Text",
+   "label": "Payment Terms"
+  },
+  {
+   "fieldname": "section_break_zwsd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Link",
+   "label": "Prepared By",
+   "options": "User"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_ckfs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accepted_by",
+   "fieldtype": "Link",
+   "label": "Accepted By ",
+   "options": "User"
+  },
+  {
+   "fieldname": "contractor",
+   "fieldtype": "Link",
+   "label": "Contractor",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_brsd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "scope_of_work",
+   "fieldtype": "Table",
+   "label": "Scope of Work",
+   "options": "Scope of Work"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-29 22:33:19.800331",
+ "modified_by": "Administrator",
+ "module": "Global-Vertical",
+ "name": "Contract Order",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,188 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-29 22:53:03.642202",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "contractor_name",
+  "contractor_address",
+  "mobile",
+  "company",
+  "date",
+  "po_no",
+  "column_break_kxkr",
+  "site_name",
+  "site_address",
+  "order_no",
+  "city",
+  "po_date",
+  "po_amount",
+  "section_break_hrjs",
+  "progress_claim_details",
+  "bill_already_submitted_section",
+  "yes",
+  "column_break_glok",
+  "no",
+  "bill_attached_now_section",
+  "yess",
+  "column_break_hiwm",
+  "noo",
+  "section_break_ftzm",
+  "paid_amount_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "contractor_address",
+   "fieldtype": "Data",
+   "label": "Contractor Address"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "contractor_name",
+   "fieldtype": "Data",
+   "label": "Contractor Name"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_kxkr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "site_name",
+   "fieldtype": "Data",
+   "label": "Site Name"
+  },
+  {
+   "fieldname": "site_address",
+   "fieldtype": "Data",
+   "label": "Site Address"
+  },
+  {
+   "fieldname": "order_no",
+   "fieldtype": "Data",
+   "label": "Order No"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "po_no",
+   "fieldtype": "Data",
+   "label": "PO No"
+  },
+  {
+   "fieldname": "po_date",
+   "fieldtype": "Date",
+   "label": "PO Date"
+  },
+  {
+   "fieldname": "po_amount",
+   "fieldtype": "Float",
+   "label": "PO Amount"
+  },
+  {
+   "fieldname": "bill_already_submitted_section",
+   "fieldtype": "Section Break",
+   "label": "Bill Already Submitted"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "fieldname": "column_break_glok",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "no",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "fieldname": "bill_attached_now_section",
+   "fieldtype": "Section Break",
+   "label": "Bill Attached Now"
+  },
+  {
+   "default": "0",
+   "fieldname": "yess",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "fieldname": "column_break_hiwm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "noo",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "fieldname": "section_break_hrjs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "progress_claim_details",
+   "fieldtype": "Table",
+   "label": "Progress Claim Details",
+   "options": "Progress Claim Details"
+  },
+  {
+   "fieldname": "section_break_ftzm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "paid_amount_details",
+   "fieldtype": "Table",
+   "label": "Paid Amount Details",
+   "options": "Paid Amount Details"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-29 23:15:03.771828",
+ "modified_by": "Administrator",
+ "module": "Global-Vertical",
+ "name": "Progress Claim",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

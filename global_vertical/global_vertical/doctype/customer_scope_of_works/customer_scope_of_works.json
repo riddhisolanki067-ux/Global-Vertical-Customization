@@ -1,0 +1,2438 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-03 22:02:57.222727",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "easa_job_no",
+  "job_name",
+  "lift_no",
+  "order_date",
+  "column_break_olgr",
+  "site_address",
+  "tower",
+  "gad_approval_date",
+  "type_of_lift_section",
+  "mrl",
+  "mr",
+  "home",
+  "pass",
+  "freight",
+  "car",
+  "column_break_pgeb",
+  "dw",
+  "vbp",
+  "pco2",
+  "pl_tl_tr2",
+  "coll",
+  "p4_pco6",
+  "section_break_xrcf",
+  "date_of_visit",
+  "site_ready_up_to_which_floor",
+  "expected_site_ready_date",
+  "column_break_qnmb",
+  "supervisor",
+  "customer_rep_name",
+  "mobile_no",
+  "required_before_start_of_installation_tab",
+  "c1_section",
+  "na_c1",
+  "done_c1",
+  "when_c1",
+  "plan1_c1",
+  "column_break_a",
+  "plan2_c1",
+  "plan3_c1",
+  "plan4_c1",
+  "c2_section",
+  "na_c2",
+  "done_c2",
+  "when_c2",
+  "plan1_c2",
+  "column_break_b",
+  "plan2_c2",
+  "plan3_c2",
+  "plan4_c2",
+  "c3_section",
+  "na_c3",
+  "done_c3",
+  "when_c3",
+  "plan1_c3",
+  "column_break_c",
+  "plan2_c3",
+  "plan3_c3",
+  "plan4_c3",
+  "c4_section",
+  "na_c4",
+  "done_c4",
+  "when_c4",
+  "plan1_c4",
+  "column_break_d",
+  "plan2_c4",
+  "plan3_c4",
+  "plan4_c4",
+  "c5_section",
+  "na_c5",
+  "done_c5",
+  "when_c5",
+  "plan1_c5",
+  "column_break_e",
+  "plan2_c5",
+  "plan3_c5",
+  "plan4_c5",
+  "c6_section",
+  "na_c6",
+  "done_c6",
+  "when_c6",
+  "plan1_c6",
+  "column_break_f",
+  "plan2_c6",
+  "plan3_c6",
+  "plan4_c6",
+  "c7_section",
+  "na_c7",
+  "done_c7",
+  "when_c7",
+  "plan1_c7",
+  "column_break_g",
+  "plan2_c7",
+  "plan3_c7",
+  "plan4_c7",
+  "c8_section",
+  "na_c8",
+  "done_c8",
+  "when_c8",
+  "plan1_c8",
+  "column_break_eh",
+  "plan2_c8",
+  "plan3_c8",
+  "plan4_c8",
+  "c9_section",
+  "na_c9",
+  "done_c9",
+  "when_c9",
+  "plan1_c9",
+  "column_break_h",
+  "plan2_c9",
+  "plan3_c9",
+  "plan4_c9",
+  "c10_section",
+  "na_c10",
+  "done_c10",
+  "when_c10",
+  "plan1_c10",
+  "column_break_ej",
+  "plan2_c10",
+  "plan3_c10",
+  "plan4_c10",
+  "c11_section",
+  "na_c11",
+  "done_c11",
+  "when_c11",
+  "plan1_c11",
+  "column_break_j",
+  "plan2_c11",
+  "plan3_c11",
+  "plan4_c11",
+  "c12_section",
+  "na_c12",
+  "done_c12",
+  "when_c12",
+  "plan1_c12",
+  "column_break_ek",
+  "plan2_c12",
+  "plan3_c12",
+  "plan4_c12",
+  "c13_section",
+  "na_c13",
+  "done_c13",
+  "when_c13",
+  "plan1_c13",
+  "column_break_k",
+  "plan2_c13",
+  "plan3_c13",
+  "plan4_c13",
+  "c14_section",
+  "na_c14",
+  "done_c14",
+  "when_c14",
+  "plan1_c14",
+  "column_break_el",
+  "plan2_c14",
+  "plan3_c14",
+  "plan4_c14",
+  "c15_section",
+  "na_c15",
+  "done_c15",
+  "when_c15",
+  "plan1_c15",
+  "column_break_l",
+  "plan2_c15",
+  "plan3_c15",
+  "plan4_c15",
+  "c16_section",
+  "na_c16",
+  "done_c16",
+  "when_c16",
+  "plan1_c16",
+  "column_break_em",
+  "plan2_c16",
+  "plan3_c16",
+  "plan4_c16",
+  "c17_section",
+  "na_c17",
+  "done_c17",
+  "when_c17",
+  "plan1_c17",
+  "column_break_m",
+  "plan2_c17",
+  "plan3_c17",
+  "plan4_c17",
+  "c18_section",
+  "na_c18",
+  "done_c18",
+  "when_c18",
+  "plan1_c18",
+  "column_break_p",
+  "plan2_c18",
+  "plan3_c18",
+  "plan4_c18",
+  "c19_section",
+  "na_c19",
+  "done_c19",
+  "when_c19",
+  "plan1_c19",
+  "column_break_eq",
+  "plan2_c19",
+  "plan3_c19",
+  "plan4_c19",
+  "c20_section",
+  "na_c20",
+  "done_c20",
+  "when_c20",
+  "plan1_c20",
+  "column_break_r",
+  "plan2_c20",
+  "plan3_c20",
+  "plan4_c20",
+  "e1_section",
+  "na_e1",
+  "done_e1",
+  "when_e1",
+  "plan1_e1",
+  "plan2_e1",
+  "column_break_xt",
+  "plan3_e1",
+  "plan4_e1",
+  "e2_section",
+  "na_e2",
+  "done_e2",
+  "when_e2",
+  "plan1_e2",
+  "plan2_e2",
+  "column_break_xtt",
+  "plan3_e2",
+  "plan4_e2",
+  "e3_section",
+  "na_e3",
+  "done_e3",
+  "when_e3",
+  "plan1_e3",
+  "plan2_e3",
+  "column_break_xttt",
+  "plan3_e3",
+  "plan4_e3",
+  "required_before_start_of_installation_with_machine_room_tab",
+  "c21_section",
+  "na_c21",
+  "done_c21",
+  "when_c21",
+  "plan1_c21",
+  "plan2_c21",
+  "column_break_wxgk",
+  "plan3_c21",
+  "plan4_c21",
+  "c22_section",
+  "na_c22",
+  "done_c22",
+  "when_c22",
+  "plan1_c22",
+  "plan2_c22",
+  "column_break_qpdh",
+  "plan3_c22",
+  "plan4_c22",
+  "c23_section",
+  "na_c23",
+  "done_c23",
+  "when_c23",
+  "plan1_c23",
+  "plan2_c23",
+  "column_break_rvnl",
+  "plan3_c23",
+  "plan4_c23",
+  "c24_section",
+  "na_c24",
+  "done_c24",
+  "when_c24",
+  "plan1_c24",
+  "plan2_c24",
+  "column_break_zbkm",
+  "plan3_c24",
+  "plan4_c24",
+  "c25_section",
+  "na_c25",
+  "done_c25",
+  "when_c25",
+  "plan1_c25",
+  "column_break_xjkl",
+  "plan2_c25",
+  "plan3_c25",
+  "plan4_c25",
+  "c26_section",
+  "na_c26",
+  "done_c26",
+  "when_c26",
+  "plan1_c26",
+  "column_break_wqpt",
+  "plan2_c26",
+  "plan3_c26",
+  "plan4_c26",
+  "c27_section",
+  "na_c27",
+  "done_c27",
+  "when_c27",
+  "plan1_c27",
+  "column_break_vhns",
+  "plan2_c27",
+  "plan3_c27",
+  "plan4_c27",
+  "c28_section",
+  "na_c28",
+  "done_c28",
+  "when_c28",
+  "plan1_c28",
+  "column_break_rmbc",
+  "plan2_c28",
+  "plan3_c28",
+  "plan4_c28",
+  "e4_section",
+  "na_e4",
+  "done_e4",
+  "when_e4",
+  "plan1_e4",
+  "column_break_dqzf",
+  "plan2_e4",
+  "plan3_e4",
+  "plan4_e4",
+  "e5_section",
+  "na_e5",
+  "done_e5",
+  "when_e5",
+  "plan1_e5",
+  "column_break_lypk",
+  "plan2_e5",
+  "plan3_e5",
+  "plan4_e5",
+  "e6_section",
+  "na_e6",
+  "done_e6",
+  "when_e6",
+  "plan1_e6",
+  "column_break_jbrq",
+  "plan2_e6",
+  "plan3_e6",
+  "plan4_e6",
+  "e7_section",
+  "na_e7",
+  "done_e7",
+  "when_e7",
+  "plan1_e7",
+  "column_break_txsw",
+  "plan2_e7",
+  "plan3_e7",
+  "plan4_e7",
+  "e8_section",
+  "na_e8",
+  "done_e8",
+  "when_e8",
+  "plan1_e8",
+  "column_break_mhgf",
+  "plan2_e8",
+  "plan3_e8",
+  "plan4_e8",
+  "e9_section",
+  "na_e9",
+  "done_e9",
+  "when_e9",
+  "plan1_e9",
+  "column_break_pvzn",
+  "plan2_e9",
+  "plan3_e9",
+  "plan4_e9",
+  "e10_section",
+  "na_e10",
+  "done_e10",
+  "when_e10",
+  "plan1_e10",
+  "column_break_qwsk",
+  "plan2_e10",
+  "plan3_e10",
+  "plan4_e10",
+  "e11_section",
+  "na_e11",
+  "done_e11",
+  "when_e11",
+  "plan1_e11",
+  "column_break_nbtf",
+  "plan2_e11",
+  "plan3_e11",
+  "plan4_e11",
+  "e12_section",
+  "na_e12",
+  "done_e12",
+  "when_e12",
+  "plan1_e12",
+  "column_break_kvpr",
+  "plan2_e12",
+  "plan3_e12",
+  "plan4_e12"
+ ],
+ "fields": [
+  {
+   "fieldname": "easa_job_no",
+   "fieldtype": "Data",
+   "label": "EASA Job No"
+  },
+  {
+   "fieldname": "job_name",
+   "fieldtype": "Data",
+   "label": "Job Name"
+  },
+  {
+   "fieldname": "lift_no",
+   "fieldtype": "Data",
+   "label": "Lift No"
+  },
+  {
+   "fieldname": "order_date",
+   "fieldtype": "Date",
+   "label": "Order Date"
+  },
+  {
+   "fieldname": "column_break_olgr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "site_address",
+   "fieldtype": "Data",
+   "label": "Site Address"
+  },
+  {
+   "fieldname": "tower",
+   "fieldtype": "Data",
+   "label": "Tower"
+  },
+  {
+   "fieldname": "gad_approval_date",
+   "fieldtype": "Date",
+   "label": "GAD Approval Date"
+  },
+  {
+   "fieldname": "type_of_lift_section",
+   "fieldtype": "Section Break",
+   "label": "Type of Lift"
+  },
+  {
+   "default": "0",
+   "fieldname": "mrl",
+   "fieldtype": "Check",
+   "label": "MRL"
+  },
+  {
+   "default": "0",
+   "fieldname": "mr",
+   "fieldtype": "Check",
+   "label": "MR"
+  },
+  {
+   "default": "0",
+   "fieldname": "home",
+   "fieldtype": "Check",
+   "label": "Home"
+  },
+  {
+   "default": "0",
+   "fieldname": "pass",
+   "fieldtype": "Check",
+   "label": "Pass"
+  },
+  {
+   "default": "0",
+   "fieldname": "freight",
+   "fieldtype": "Check",
+   "label": "Freight"
+  },
+  {
+   "default": "0",
+   "fieldname": "car",
+   "fieldtype": "Check",
+   "label": "Car"
+  },
+  {
+   "fieldname": "column_break_pgeb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "dw",
+   "fieldtype": "Check",
+   "label": "DW"
+  },
+  {
+   "default": "0",
+   "fieldname": "vbp",
+   "fieldtype": "Check",
+   "label": "VBP"
+  },
+  {
+   "default": "0",
+   "fieldname": "pco2",
+   "fieldtype": "Check",
+   "label": "2PCO"
+  },
+  {
+   "default": "0",
+   "fieldname": "pl_tl_tr2",
+   "fieldtype": "Check",
+   "label": "2PL-TL/TR"
+  },
+  {
+   "default": "0",
+   "fieldname": "coll",
+   "fieldtype": "Check",
+   "label": "Coll"
+  },
+  {
+   "default": "0",
+   "fieldname": "p4_pco6",
+   "fieldtype": "Check",
+   "label": "4P-6PCO"
+  },
+  {
+   "fieldname": "section_break_xrcf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date_of_visit",
+   "fieldtype": "Date",
+   "label": "Date of Visit"
+  },
+  {
+   "fieldname": "site_ready_up_to_which_floor",
+   "fieldtype": "Data",
+   "label": "Site Ready Up to Which Floor"
+  },
+  {
+   "fieldname": "expected_site_ready_date",
+   "fieldtype": "Date",
+   "label": "Expected Site Ready Date"
+  },
+  {
+   "fieldname": "column_break_qnmb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "supervisor",
+   "fieldtype": "Data",
+   "label": "Supervisor"
+  },
+  {
+   "fieldname": "customer_rep_name",
+   "fieldtype": "Link",
+   "label": "Customer Rep Name",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "required_before_start_of_installation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Required Before Start of Installation"
+  },
+  {
+   "fieldname": "c1_section",
+   "fieldtype": "Section Break",
+   "label": "C1 - Lift Shaft ,Pit ,Over Head / M/C Room Structure Completed As Per GAD"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c1",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c1",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c1",
+   "fieldtype": "Data",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c1",
+   "fieldtype": "Data",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "plan2_c1",
+   "fieldtype": "Data",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c1",
+   "fieldtype": "Data",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c1",
+   "fieldtype": "Data",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c2_section",
+   "fieldtype": "Section Break",
+   "label": "C2 - Pit Finished To Required Depth As Per GAD"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c2",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c2",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c2",
+   "fieldtype": "Data",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c2",
+   "fieldtype": "Data",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "plan2_c2",
+   "fieldtype": "Data",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c2",
+   "fieldtype": "Data",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c2",
+   "fieldtype": "Data",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c3_section",
+   "fieldtype": "Section Break",
+   "label": "C3 - Waterproofing of Pit Completed"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c3",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c3",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c3",
+   "fieldtype": "Data",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c3",
+   "fieldtype": "Data",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "plan2_c3",
+   "fieldtype": "Data",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c3",
+   "fieldtype": "Data",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c3",
+   "fieldtype": "Data",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c4_section",
+   "fieldtype": "Section Break",
+   "label": "C4 - Hoisting Beams / Hooks Of Adequate Capacity As Per GAD"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c4",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c4",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c4",
+   "fieldtype": "Data",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c4",
+   "fieldtype": "Data",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "plan2_c4",
+   "fieldtype": "Data",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c4",
+   "fieldtype": "Data",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c4",
+   "fieldtype": "Data",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c5_section",
+   "fieldtype": "Section Break",
+   "label": "C5 - Door Lintel On Every Floor ENTRANCE Provided As Per GAD"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c5",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c5",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c5",
+   "fieldtype": "Data",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c5",
+   "fieldtype": "Data",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "plan2_c5",
+   "fieldtype": "Data",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c5",
+   "fieldtype": "Data",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c5",
+   "fieldtype": "Data",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c6_section",
+   "fieldtype": "Section Break",
+   "label": "C6 - Front Entrance Walls Provided On All Floors as per GAD"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c6",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c6",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c6",
+   "fieldtype": "Data",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c6",
+   "fieldtype": "Data",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "plan2_c6",
+   "fieldtype": "Data",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c6",
+   "fieldtype": "Data",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c6",
+   "fieldtype": "Data",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c7_section",
+   "fieldtype": "Section Break",
+   "label": "C7 - Smoke Vent in Over Head Area Provided ( Min Size 450mm*450mm )"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c7",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c7",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c7",
+   "fieldtype": "Data",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c7",
+   "fieldtype": "Data",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "plan2_c7",
+   "fieldtype": "Data",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c7",
+   "fieldtype": "Data",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c7",
+   "fieldtype": "Data",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c8_section",
+   "fieldtype": "Section Break",
+   "label": "C8 - Door Opening Full Width Available On Lowest Floor."
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c8",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c8",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c8",
+   "fieldtype": "Data",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c8",
+   "fieldtype": "Data",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "plan2_c8",
+   "fieldtype": "Data",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c8",
+   "fieldtype": "Data",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c8",
+   "fieldtype": "Data",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c9_section",
+   "fieldtype": "Section Break",
+   "label": "C9 - FFL Marking in Front Of Lift Entrance Provided in all Floors."
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c9",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c9",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c9",
+   "fieldtype": "Data",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c9",
+   "fieldtype": "Data",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "plan2_c9",
+   "fieldtype": "Data",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c9",
+   "fieldtype": "Data",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c9",
+   "fieldtype": "Data",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c10_section",
+   "fieldtype": "Section Break",
+   "label": "C10 - Plastering In Lift Shaft at all floors Completed"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c10",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c10",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c10",
+   "fieldtype": "Data",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c10",
+   "fieldtype": "Data",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "plan2_c10",
+   "fieldtype": "Data",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c10",
+   "fieldtype": "Data",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c10",
+   "fieldtype": "Data",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c11_section",
+   "fieldtype": "Section Break",
+   "label": "C11 - White Washing / Painting Completed in Lift Shaft on All Floors."
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c11",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c11",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c11",
+   "fieldtype": "Data",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c11",
+   "fieldtype": "Data",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "plan2_c11",
+   "fieldtype": "Data",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c11",
+   "fieldtype": "Data",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c11",
+   "fieldtype": "Data",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c12_section",
+   "fieldtype": "Section Break",
+   "label": "C12 - Lockable Store Room available Near Lift Shaft (Approx 30 Sq M/Per Lift )"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c12",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c12",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c12",
+   "fieldtype": "Data",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c12",
+   "fieldtype": "Data",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "plan2_c12",
+   "fieldtype": "Data",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c12",
+   "fieldtype": "Data",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c12",
+   "fieldtype": "Data",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c13_section",
+   "fieldtype": "Section Break",
+   "label": "C13 - Clean & Dry Pit & Lift Well Available"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c13",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c13",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c13",
+   "fieldtype": "Data",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c13",
+   "fieldtype": "Data",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "plan2_c13",
+   "fieldtype": "Data",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c13",
+   "fieldtype": "Data",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c13",
+   "fieldtype": "Data",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c14_section",
+   "fieldtype": "Section Break",
+   "label": "C14 - Safe , Clear & unobstructed access to Lift Shaft & M/C Room Available"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c14",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c14",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c14",
+   "fieldtype": "Data",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c14",
+   "fieldtype": "Data",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "plan2_c14",
+   "fieldtype": "Data",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c14",
+   "fieldtype": "Data",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c14",
+   "fieldtype": "Data",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c15_section",
+   "fieldtype": "Section Break",
+   "label": "C15 - suitable Notch in Sill fixing area of Landing Door availabvle as per GAD"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c15",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c15",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c15",
+   "fieldtype": "Data",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c15",
+   "fieldtype": "Data",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "plan2_c15",
+   "fieldtype": "Data",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c15",
+   "fieldtype": "Data",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c15",
+   "fieldtype": "Data",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c16_section",
+   "fieldtype": "Section Break",
+   "label": "C16 - Lift Shaft ,Pit ,Over Head / M/C Room Structure Completed As Per GAD"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c16",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c16",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c16",
+   "fieldtype": "Data",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c16",
+   "fieldtype": "Data",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "plan2_c16",
+   "fieldtype": "Data",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c16",
+   "fieldtype": "Data",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c16",
+   "fieldtype": "Data",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c17_section",
+   "fieldtype": "Section Break",
+   "label": "C17 - Cut Out For LOP Provided On Front Wall of All Floor as per GAD"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c17",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c17",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c17",
+   "fieldtype": "Data",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c17",
+   "fieldtype": "Data",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "plan2_c17",
+   "fieldtype": "Data",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c17",
+   "fieldtype": "Data",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c17",
+   "fieldtype": "Data",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c18_section",
+   "fieldtype": "Section Break",
+   "label": "C18 - Steel Beams ( Machine Support Beams ) available at Top Floor."
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c18",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c18",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c18",
+   "fieldtype": "Data",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c18",
+   "fieldtype": "Data",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "plan2_c18",
+   "fieldtype": "Data",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c18",
+   "fieldtype": "Data",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c18",
+   "fieldtype": "Data",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c19_section",
+   "fieldtype": "Section Break",
+   "label": "C19 - Marking for Cutouts for Beams Provided in walls in OH area"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c19",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c19",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c19",
+   "fieldtype": "Data",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c19",
+   "fieldtype": "Data",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "plan2_c19",
+   "fieldtype": "Data",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c19",
+   "fieldtype": "Data",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c19",
+   "fieldtype": "Data",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c20_section",
+   "fieldtype": "Section Break",
+   "label": "C20 - Cutouts in walls in Over Head area for Beams Provided"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c20",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c20",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c20",
+   "fieldtype": "Data",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c20",
+   "fieldtype": "Data",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "plan2_c20",
+   "fieldtype": "Data",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c20",
+   "fieldtype": "Data",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c20",
+   "fieldtype": "Data",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "column_break_a",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_b",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_c",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_d",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_e",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_f",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_g",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_eh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_h",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ej",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_j",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ek",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_k",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_el",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_l",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_em",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_m",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_p",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_eq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_r",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "e1_section",
+   "fieldtype": "Section Break",
+   "label": "E1 - Permanent Working Lights (Bulkhead Fitting) in Lift Shaft Provided"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_e1",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_e1",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_e1",
+   "fieldtype": "Small Text",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_e1",
+   "fieldtype": "Small Text",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "column_break_xt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan2_e1",
+   "fieldtype": "Small Text",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_e1",
+   "fieldtype": "Small Text",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_e1",
+   "fieldtype": "Small Text",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "e2_section",
+   "fieldtype": "Section Break",
+   "label": "E2 - Single Ph Power Switch / Socket Provided at all floors for Hammer Drill M/c"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_e2",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_e2",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_e2",
+   "fieldtype": "Small Text",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_e2",
+   "fieldtype": "Small Text",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "column_break_xtt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan2_e2",
+   "fieldtype": "Small Text",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_e2",
+   "fieldtype": "Small Text",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_e2",
+   "fieldtype": "Small Text",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "e3_section",
+   "fieldtype": "Section Break",
+   "label": "E3 - Earthing Provided On Steel Scaffolding"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_e3",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_e3",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_e3",
+   "fieldtype": "Small Text",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_e3",
+   "fieldtype": "Small Text",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "column_break_xttt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan2_e3",
+   "fieldtype": "Small Text",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_e3",
+   "fieldtype": "Small Text",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_e3",
+   "fieldtype": "Small Text",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "required_before_start_of_installation_with_machine_room_tab",
+   "fieldtype": "Tab Break",
+   "label": "Required Before Start of Installation(With Machine Room)"
+  },
+  {
+   "fieldname": "c21_section",
+   "fieldtype": "Section Break",
+   "label": "C21 - Rope Cutouts Provided In Floor Slab of Machine Room"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c21",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c21",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c21",
+   "fieldtype": "Small Text",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c21",
+   "fieldtype": "Small Text",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "column_break_wxgk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan2_c21",
+   "fieldtype": "Small Text",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c21",
+   "fieldtype": "Small Text",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c21",
+   "fieldtype": "Small Text",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c22_section",
+   "fieldtype": "Section Break",
+   "label": "C22 - Safe Staircase , Door , Lighting , Exhaust-Fan Provided in M/C Room"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c22",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c22",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c22",
+   "fieldtype": "Small Text",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c22",
+   "fieldtype": "Small Text",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "column_break_qpdh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan2_c22",
+   "fieldtype": "Small Text",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c22",
+   "fieldtype": "Small Text",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c22",
+   "fieldtype": "Small Text",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c23_section",
+   "fieldtype": "Section Break",
+   "label": "C23 - Plastering of Walls & Roof Completed in Machine Room"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c23",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c23",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c23",
+   "fieldtype": "Small Text",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c23",
+   "fieldtype": "Small Text",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "column_break_rvnl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan2_c23",
+   "fieldtype": "Small Text",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c23",
+   "fieldtype": "Small Text",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c23",
+   "fieldtype": "Small Text",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c24_section",
+   "fieldtype": "Section Break",
+   "label": "C24 - White Washing / Painting Completed in Machine Room"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c24",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c24",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c24",
+   "fieldtype": "Small Text",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c24",
+   "fieldtype": "Small Text",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "column_break_zbkm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan2_c24",
+   "fieldtype": "Small Text",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c24",
+   "fieldtype": "Small Text",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c24",
+   "fieldtype": "Small Text",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c25_section",
+   "fieldtype": "Section Break",
+   "label": "C25 - Cladding / Architraves provided on All Lift Door Entrances"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c25",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c25",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c25",
+   "fieldtype": "Small Text",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c25",
+   "fieldtype": "Small Text",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "column_break_xjkl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan2_c25",
+   "fieldtype": "Small Text",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c25",
+   "fieldtype": "Small Text",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c25",
+   "fieldtype": "Small Text",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c26_section",
+   "fieldtype": "Section Break",
+   "label": "C26 - Buffer Block ( RCC ) Provided in Lift Pit as per GAD"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c26",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c26",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c26",
+   "fieldtype": "Small Text",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c26",
+   "fieldtype": "Small Text",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "column_break_wqpt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan2_c26",
+   "fieldtype": "Small Text",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c26",
+   "fieldtype": "Small Text",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c26",
+   "fieldtype": "Small Text",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c27_section",
+   "fieldtype": "Section Break",
+   "label": "C27 - FINAL Finish / WW/Washing / Painting Completed in Lift Shaft / M/C Room"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c27",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c27",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c27",
+   "fieldtype": "Small Text",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c27",
+   "fieldtype": "Small Text",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "column_break_vhns",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan2_c27",
+   "fieldtype": "Small Text",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c27",
+   "fieldtype": "Small Text",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c27",
+   "fieldtype": "Small Text",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "c28_section",
+   "fieldtype": "Section Break",
+   "label": "C28 - Pit Ladder Provided in Lift Pit ( Required where Pit Depth \u2265 1350 mm )"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_c28",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_c28",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_c28",
+   "fieldtype": "Small Text",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_c28",
+   "fieldtype": "Small Text",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "column_break_rmbc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan2_c28",
+   "fieldtype": "Small Text",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_c28",
+   "fieldtype": "Small Text",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_c28",
+   "fieldtype": "Small Text",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "e4_section",
+   "fieldtype": "Section Break",
+   "label": "E4 - 3 Phase Power + Double Earthing + MCB + RCCB Provided As Per GAD"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_e4",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_e4",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_e4",
+   "fieldtype": "Small Text",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_e4",
+   "fieldtype": "Small Text",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "column_break_dqzf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan2_e4",
+   "fieldtype": "Small Text",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_e4",
+   "fieldtype": "Small Text",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_e4",
+   "fieldtype": "Small Text",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "e5_section",
+   "fieldtype": "Section Break",
+   "label": "E5 - Exhaust Fan Provided In Lift Well or M/C Room"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_e5",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_e5",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_e5",
+   "fieldtype": "Small Text",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_e5",
+   "fieldtype": "Small Text",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "column_break_lypk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan2_e5",
+   "fieldtype": "Small Text",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_e5",
+   "fieldtype": "Small Text",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_e5",
+   "fieldtype": "Small Text",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "e6_section",
+   "fieldtype": "Section Break",
+   "label": "E6 - Earthing Bracket Provided Near Lift Controller"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_e6",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_e6",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_e6",
+   "fieldtype": "Small Text",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_e6",
+   "fieldtype": "Small Text",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "column_break_jbrq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan2_e6",
+   "fieldtype": "Small Text",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_e6",
+   "fieldtype": "Small Text",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_e6",
+   "fieldtype": "Small Text",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "e7_section",
+   "fieldtype": "Section Break",
+   "label": "E7 - Double Earthing Terminated On Earthing Bracket (VERY CRITICAL)"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_e7",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_e7",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_e7",
+   "fieldtype": "Small Text",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_e7",
+   "fieldtype": "Small Text",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "column_break_txsw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan2_e7",
+   "fieldtype": "Small Text",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_e7",
+   "fieldtype": "Small Text",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_e7",
+   "fieldtype": "Small Text",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "e8_section",
+   "fieldtype": "Section Break",
+   "label": "E8 - Fire Extinguishing Provided near Lift Controller"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_e8",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_e8",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_e8",
+   "fieldtype": "Small Text",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_e8",
+   "fieldtype": "Small Text",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "column_break_mhgf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan2_e8",
+   "fieldtype": "Small Text",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_e8",
+   "fieldtype": "Small Text",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_e8",
+   "fieldtype": "Small Text",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "e9_section",
+   "fieldtype": "Section Break",
+   "label": "E9 - Danger Plate (440 V) Provided on Controller"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_e9",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_e9",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_e9",
+   "fieldtype": "Small Text",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_e9",
+   "fieldtype": "Small Text",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "column_break_pvzn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan2_e9",
+   "fieldtype": "Small Text",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_e9",
+   "fieldtype": "Small Text",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_e9",
+   "fieldtype": "Small Text",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "e10_section",
+   "fieldtype": "Section Break",
+   "label": "E10 - Earth Striping Working in Lift Shaft"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_e10",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_e10",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_e10",
+   "fieldtype": "Small Text",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_e10",
+   "fieldtype": "Small Text",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "column_break_qwsk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan2_e10",
+   "fieldtype": "Small Text",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_e10",
+   "fieldtype": "Small Text",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_e10",
+   "fieldtype": "Small Text",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "e11_section",
+   "fieldtype": "Section Break",
+   "label": "E11 - Smoke Vent Window Same Vent In Lift Shaft"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_e11",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_e11",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_e11",
+   "fieldtype": "Small Text",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_e11",
+   "fieldtype": "Small Text",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "column_break_nbtf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan2_e11",
+   "fieldtype": "Small Text",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_e11",
+   "fieldtype": "Small Text",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_e11",
+   "fieldtype": "Small Text",
+   "label": "Plan 04"
+  },
+  {
+   "fieldname": "e12_section",
+   "fieldtype": "Section Break",
+   "label": "E12 - Louvers Provided on Exhaust Fan"
+  },
+  {
+   "default": "0",
+   "fieldname": "na_e12",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "default": "0",
+   "fieldname": "done_e12",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "when_e12",
+   "fieldtype": "Small Text",
+   "label": "When"
+  },
+  {
+   "fieldname": "plan1_e12",
+   "fieldtype": "Small Text",
+   "label": "Plan 01"
+  },
+  {
+   "fieldname": "column_break_kvpr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan2_e12",
+   "fieldtype": "Small Text",
+   "label": "Plan 02"
+  },
+  {
+   "fieldname": "plan3_e12",
+   "fieldtype": "Small Text",
+   "label": "Plan 03"
+  },
+  {
+   "fieldname": "plan4_e12",
+   "fieldtype": "Small Text",
+   "label": "Plan 04"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-04 00:14:50.435168",
+ "modified_by": "Administrator",
+ "module": "Global-Vertical",
+ "name": "Customer Scope of Works",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

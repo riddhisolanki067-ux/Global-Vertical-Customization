@@ -1,0 +1,1849 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-05 22:17:39.193031",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "c1_lift_shaftpitoh_100_ready_section",
+  "c1_lift_no_1",
+  "c1_lift_no_2",
+  "c1_lift_no_3",
+  "c1_lift_no_4",
+  "c1_lift_no_5",
+  "c1_lift_no_6",
+  "c2_pit_depth_as_per_gad_section",
+  "c2_lift_no_1",
+  "c2_lift_no_2",
+  "c2_lift_no_3",
+  "c2_lift_no_4",
+  "c2_lift_no_5",
+  "c2_lift_no_6",
+  "c3_water_proofing_of_lift_pit_section",
+  "c3_lift_no_1",
+  "c3_lift_no_2",
+  "c3_lift_no_3",
+  "c3_lift_no_4",
+  "c3_lift_no_5",
+  "c3_lift_no_6",
+  "c4_hosting_beams_hooks_section",
+  "c4_lift_no_1",
+  "c4_lift_no_2",
+  "c4_lift_no_3",
+  "c4_lift_no_4",
+  "c4_lift_no_5",
+  "c4_lift_no_6",
+  "c5_door_lintel_on_every_floor_section",
+  "c5_lift_no_1",
+  "c5_lift_no_2",
+  "c5_lift_no_3",
+  "c5_lift_no_4",
+  "c5_lift_no_5",
+  "c5_lift_no_6",
+  "c6_door_lintel_height_as_per_gad_section",
+  "c6_lift_no_1",
+  "c6_lift_no_2",
+  "c6_lift_no_3",
+  "c6_lift_no_4",
+  "c6_lift_no_5",
+  "c6_lift_no_6",
+  "c7_front_entrance_walls_all_floors_section",
+  "c7_lift_no_1",
+  "c7_lift_no_2",
+  "c7_lift_no_3",
+  "c7_lift_no_4",
+  "c7_lift_no_5",
+  "c7_lift_no_6",
+  "c8_smoke_vent_in_over_head_section",
+  "c8_lift_no_1",
+  "c8_lift_no_2",
+  "c8_lift_no_3",
+  "c8_lift_no_4",
+  "c8_lift_no_5",
+  "c8_lift_no_6",
+  "c9_door_opening_full_width_at_gf_section",
+  "c9_lift_no_1",
+  "c9_lift_no_2",
+  "c9_lift_no_3",
+  "c9_lift_no_4",
+  "c9_lift_no_5",
+  "c9_lift_no_6",
+  "c10_ffl_marking_on_all_floors_section",
+  "c10_lift_no_1",
+  "c10_lift_no_2",
+  "c10_lift_no_3",
+  "c10_lift_no_4",
+  "c10_lift_no_5",
+  "c10_lift_no_6",
+  "c11_plastering_in_lift_shaft_section",
+  "c11_lift_no_1",
+  "c11_lift_no_2",
+  "c11_lift_no_3",
+  "c11_lift_no_4",
+  "c11_lift_no_5",
+  "c11_lift_no_6",
+  "c12_rope_cutouts_in_floor_slab_in_mr_section",
+  "c12_lift_no_1",
+  "c12_lift_no_2",
+  "c12_lift_no_3",
+  "c12_lift_no_4",
+  "c12_lift_no_5",
+  "c12_lift_no_6",
+  "c14_white_washing_painting_lift_shaft_section",
+  "c14_lift_no_1",
+  "c14_lift_no_2",
+  "c14_lift_no_3",
+  "c14_lift_no_4",
+  "c14_lift_no_5",
+  "c14_lift_no_6",
+  "c15_lockable_store_room_near_lift_shaft_section",
+  "c15_lift_no_1",
+  "c15_lift_no_2",
+  "c15_lift_no_3",
+  "c15_lift_no_4",
+  "c15_lift_no_5",
+  "c15_lift_no_6",
+  "c16_clean_dry_finished_pit_section",
+  "c16_lift_no_1",
+  "c16_lift_no_2",
+  "c16_lift_no_3",
+  "c16_lift_no_4",
+  "c16_lift_no_5",
+  "c16_lift_no_6",
+  "c17_safe_clear_unobstructed_access_section",
+  "c17_lift_no_1",
+  "c17_lift_no_2",
+  "c17_lift_no_3",
+  "c17_lift_no_4",
+  "c17_lift_no_5",
+  "c17_lift_no_6",
+  "c18_suitable_notch_in_sill_fixing_area_section",
+  "c18_lift_no_1",
+  "c18_lift_no_2",
+  "c18_lift_no_3",
+  "c18_lift_no_4",
+  "c18_lift_no_5",
+  "c18_lift_no_6",
+  "c19_scaffolding_safety_barricading_section",
+  "c19_lift_no_1",
+  "c19_lift_no_2",
+  "c19_lift_no_3",
+  "c19_lift_no_4",
+  "c19_lift_no_5",
+  "c19_lift_no_6",
+  "c20_cut_out_for_lop_on_front_walls_section",
+  "c20_lift_no_1",
+  "c20_lift_no_2",
+  "c20_lift_no_3",
+  "c20_lift_no_4",
+  "c20_lift_no_5",
+  "c20_lift_no_6",
+  "c21_supply_of_mc_support_beams_section",
+  "c21_lift_no_1",
+  "c21_lift_no_2",
+  "c21_lift_no_3",
+  "c21_lift_no_4",
+  "c21_lift_no_5",
+  "c21_lift_no_6",
+  "c22_marking_of_cutouts_of_mc_support_beams_section",
+  "c22_lift_no_1",
+  "c22_lift_no_2",
+  "c22_lift_no_3",
+  "c22_lift_no_4",
+  "c22_lift_no_5",
+  "c22_lift_no_6",
+  "c23_cutouts_for_mc_support_beams_section",
+  "c23_lift_no_1",
+  "c23_lift_no_2",
+  "c23_lift_no_3",
+  "c23_lift_no_4",
+  "c23_lift_no_5",
+  "c23_lift_no_6",
+  "c24_section",
+  "c24_lift_no_1",
+  "c24_lift_no_2",
+  "c24_lift_no_3",
+  "c24_lift_no_4",
+  "c24_lift_no_5",
+  "c24_lift_no_6",
+  "c25_plastering_of_walls_roof_in_mr_section",
+  "c25_lift_no_1",
+  "c25_lift_no_2",
+  "c25_lift_no_3",
+  "c25_lift_no_4",
+  "c25_lift_no_5",
+  "c25_lift_no_6",
+  "c26_white_washing_painting_in_mr_section",
+  "c26_lift_no_1",
+  "c26_lift_no_2",
+  "c26_lift_no_3",
+  "c26_lift_no_4",
+  "c26_lift_no_5",
+  "c26_lift_no_6",
+  "e1_permanent_lights_in_lift_shaft_section",
+  "e1_lift_no_1",
+  "e1_lift_no_2",
+  "e1_lift_no_3",
+  "e1_lift_no_4",
+  "e1_lift_no_5",
+  "e1_lift_no_6",
+  "e2_earthing_on_steel_scaffolding_section",
+  "e2_lift_no_1",
+  "e2_lift_no_2",
+  "e2_lift_no_3",
+  "e2_lift_no_4",
+  "e2_lift_no_5",
+  "e2_lift_no_6",
+  "e3_earthing_brackets_near_controller_section",
+  "e3_lift_no_1",
+  "e3_lift_no_2",
+  "e3_lift_no_3",
+  "e3_lift_no_4",
+  "e3_lift_no_5",
+  "e3_lift_no_6",
+  "e4_exhaust_fan_section",
+  "e4_lift_no_1",
+  "e4_lift_no_2",
+  "e4_lift_no_3",
+  "e4_lift_no_4",
+  "e4_lift_no_5",
+  "e4_lift_no_6",
+  "e5_double_earthing_provided_section",
+  "e5_lift_no_1",
+  "e5_lift_no_2",
+  "e5_lift_no_3",
+  "e5_lift_no_4",
+  "e5_lift_no_5",
+  "e5_lift_no_6",
+  "e6_danger_plate_440v_section",
+  "e6_lift_no_1",
+  "e6_lift_no_2",
+  "e6_lift_no_3",
+  "e6_lift_no_4",
+  "e6_lift_no_5",
+  "e6_lift_no_6",
+  "e7_permanent_lights_in_mr_section",
+  "e7_lift_no_1",
+  "e7_lift_no_2",
+  "e7_lift_no_3",
+  "e7_lift_no_4",
+  "e7_lift_no_5",
+  "e7_lift_no_6",
+  "e8_single_phase_power_switch_socket_section",
+  "e8_lift_no_1",
+  "e8_lift_no_2",
+  "e8_lift_no_3",
+  "e8_lift_no_4",
+  "e8_lift_no_5",
+  "e8_lift_no_6",
+  "e9_3phase_power_mcb_rccb_section",
+  "e9_lift_no_1",
+  "e9_lift_no_2",
+  "e9_lift_no_3",
+  "e9_lift_no_4",
+  "e9_lift_no_5",
+  "e9_lift_no_6",
+  "e10_mcb_box_provided_with_cover_section",
+  "e10_lift_no_1",
+  "e10_lift_no_2",
+  "e10_lift_no_3",
+  "e10_lift_no_4",
+  "e10_lift_no_5",
+  "e10_lift_no_6",
+  "e11_permanent_lights_in_machine_room_section",
+  "e11_lift_no_1",
+  "e11_lift_no_2",
+  "e11_lift_no_3",
+  "e11_lift_no_4",
+  "e11_lift_no_5",
+  "e11_lift_no_6",
+  "e12_fire_extinguisher_near_controller_section",
+  "e12_lift_no_1",
+  "e12_lift_no_2",
+  "e12_lift_no_3",
+  "e12_lift_no_4",
+  "e12_lift_no_5",
+  "e12_lift_no_6",
+  "e13_louvers_on_smoke_vent_section",
+  "e13_lift_no_1",
+  "e13_lift_no_2",
+  "e13_lift_no_3",
+  "e13_lift_no_4",
+  "e13_lift_no_5",
+  "e13_lift_no_6",
+  "e14_louvers_on_exhaust_fan_section",
+  "e14_lift_no_1",
+  "e14_lift_no_2",
+  "e14_lift_no_3",
+  "e14_lift_no_4",
+  "e14_lift_no_5",
+  "e14_lift_no_6",
+  "c27_door_cladding_architraves_section",
+  "c27_lift_no_1",
+  "c27_lift_no_2",
+  "c27_lift_no_3",
+  "c27_lift_no_4",
+  "c27_lift_no_5",
+  "c27_lift_no_6",
+  "c28_buffer_block_rcc_in_pit_section",
+  "c28_lift_no_1",
+  "c28_lift_no_2",
+  "c28_lift_no_3",
+  "c28_lift_no_4",
+  "c28_lift_no_5",
+  "c28_lift_no_6",
+  "c29_final_painting_final_finishing_section",
+  "c29_lift_no_1",
+  "c29_lift_no_2",
+  "c29_lift_no_3",
+  "c29_lift_no_4",
+  "c29_lift_no_5",
+  "c29_lift_no_6",
+  "c30_steel_ladder_in_lift_pit_section",
+  "c30_lift_no_1",
+  "c30_lift_no_2",
+  "c30_lift_no_3",
+  "c30_lift_no_4",
+  "c30_lift_no_5",
+  "c30_lift_no_6"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "c1_lift_shaftpitoh_100_ready_section",
+   "fieldtype": "Section Break",
+   "label": "C1, LIFT SHAFT,PIT,OH 100% READY"
+  },
+  {
+   "fieldname": "c1_lift_no_1",
+   "fieldtype": "Data",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c1_lift_no_2",
+   "fieldtype": "Data",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c1_lift_no_3",
+   "fieldtype": "Data",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c1_lift_no_4",
+   "fieldtype": "Data",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c1_lift_no_5",
+   "fieldtype": "Data",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c1_lift_no_6",
+   "fieldtype": "Data",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c2_pit_depth_as_per_gad_section",
+   "fieldtype": "Section Break",
+   "label": "C2 PIT DEPTH AS PER GAD"
+  },
+  {
+   "fieldname": "c2_lift_no_1",
+   "fieldtype": "Data",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c2_lift_no_2",
+   "fieldtype": "Data",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c2_lift_no_3",
+   "fieldtype": "Data",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c2_lift_no_4",
+   "fieldtype": "Data",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c2_lift_no_5",
+   "fieldtype": "Data",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c2_lift_no_6",
+   "fieldtype": "Data",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c3_water_proofing_of_lift_pit_section",
+   "fieldtype": "Section Break",
+   "label": "C3 WATER PROOFING OF LIFT PIT"
+  },
+  {
+   "fieldname": "c3_lift_no_1",
+   "fieldtype": "Data",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c3_lift_no_2",
+   "fieldtype": "Data",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c3_lift_no_3",
+   "fieldtype": "Data",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c3_lift_no_4",
+   "fieldtype": "Data",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c3_lift_no_5",
+   "fieldtype": "Data",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c3_lift_no_6",
+   "fieldtype": "Data",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c4_hosting_beams_hooks_section",
+   "fieldtype": "Section Break",
+   "label": "C4 HOSTING BEAMS/HOOKS"
+  },
+  {
+   "fieldname": "c4_lift_no_1",
+   "fieldtype": "Data",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c4_lift_no_2",
+   "fieldtype": "Data",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c4_lift_no_3",
+   "fieldtype": "Data",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c4_lift_no_4",
+   "fieldtype": "Data",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c4_lift_no_5",
+   "fieldtype": "Data",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c4_lift_no_6",
+   "fieldtype": "Data",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c5_door_lintel_on_every_floor_section",
+   "fieldtype": "Section Break",
+   "label": "C5 DOOR LINTEL ON EVERY FLOOR"
+  },
+  {
+   "fieldname": "c5_lift_no_1",
+   "fieldtype": "Data",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c5_lift_no_2",
+   "fieldtype": "Data",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c5_lift_no_3",
+   "fieldtype": "Data",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c5_lift_no_4",
+   "fieldtype": "Data",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c5_lift_no_5",
+   "fieldtype": "Data",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c5_lift_no_6",
+   "fieldtype": "Data",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c6_door_lintel_height_as_per_gad_section",
+   "fieldtype": "Section Break",
+   "label": "C6 DOOR LINTEL HEIGHT AS PER GAD"
+  },
+  {
+   "fieldname": "c6_lift_no_1",
+   "fieldtype": "Data",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c6_lift_no_2",
+   "fieldtype": "Data",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c6_lift_no_3",
+   "fieldtype": "Data",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c6_lift_no_4",
+   "fieldtype": "Data",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c6_lift_no_5",
+   "fieldtype": "Data",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c6_lift_no_6",
+   "fieldtype": "Data",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c7_front_entrance_walls_all_floors_section",
+   "fieldtype": "Section Break",
+   "label": "C7 FRONT ENTRANCE WALLS ALL FLOORS"
+  },
+  {
+   "fieldname": "c7_lift_no_1",
+   "fieldtype": "Data",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c7_lift_no_2",
+   "fieldtype": "Data",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c7_lift_no_3",
+   "fieldtype": "Data",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c7_lift_no_4",
+   "fieldtype": "Data",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c7_lift_no_5",
+   "fieldtype": "Data",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c7_lift_no_6",
+   "fieldtype": "Data",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c8_smoke_vent_in_over_head_section",
+   "fieldtype": "Section Break",
+   "label": "C8 SMOKE VENT IN OVER HEAD"
+  },
+  {
+   "fieldname": "c8_lift_no_1",
+   "fieldtype": "Data",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c8_lift_no_2",
+   "fieldtype": "Data",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c8_lift_no_3",
+   "fieldtype": "Data",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c8_lift_no_4",
+   "fieldtype": "Data",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c8_lift_no_5",
+   "fieldtype": "Data",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c8_lift_no_6",
+   "fieldtype": "Data",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c9_door_opening_full_width_at_gf_section",
+   "fieldtype": "Section Break",
+   "label": "C9 DOOR OPENING FULL WIDTH AT GF"
+  },
+  {
+   "fieldname": "c9_lift_no_1",
+   "fieldtype": "Data",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c9_lift_no_2",
+   "fieldtype": "Data",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c9_lift_no_3",
+   "fieldtype": "Data",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c9_lift_no_4",
+   "fieldtype": "Data",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c9_lift_no_5",
+   "fieldtype": "Data",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c9_lift_no_6",
+   "fieldtype": "Data",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c10_ffl_marking_on_all_floors_section",
+   "fieldtype": "Section Break",
+   "label": "C10 FFL MARKING ON ALL FLOORS"
+  },
+  {
+   "fieldname": "c10_lift_no_1",
+   "fieldtype": "Data",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c10_lift_no_2",
+   "fieldtype": "Data",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c10_lift_no_3",
+   "fieldtype": "Data",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c10_lift_no_4",
+   "fieldtype": "Data",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c10_lift_no_5",
+   "fieldtype": "Data",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c10_lift_no_6",
+   "fieldtype": "Data",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c11_plastering_in_lift_shaft_section",
+   "fieldtype": "Section Break",
+   "label": "C11 PLASTERING IN LIFT SHAFT"
+  },
+  {
+   "fieldname": "c11_lift_no_1",
+   "fieldtype": "Data",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c11_lift_no_2",
+   "fieldtype": "Data",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c11_lift_no_3",
+   "fieldtype": "Data",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c11_lift_no_4",
+   "fieldtype": "Data",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c11_lift_no_5",
+   "fieldtype": "Data",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c11_lift_no_6",
+   "fieldtype": "Data",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c12_rope_cutouts_in_floor_slab_in_mr_section",
+   "fieldtype": "Section Break",
+   "label": "C12 ROPE CUTOUTS IN FLOOR SLAB IN MR"
+  },
+  {
+   "fieldname": "c12_lift_no_1",
+   "fieldtype": "Data",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c12_lift_no_2",
+   "fieldtype": "Data",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c12_lift_no_3",
+   "fieldtype": "Data",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c12_lift_no_4",
+   "fieldtype": "Data",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c12_lift_no_5",
+   "fieldtype": "Data",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c12_lift_no_6",
+   "fieldtype": "Data",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c14_white_washing_painting_lift_shaft_section",
+   "fieldtype": "Section Break",
+   "label": "C14 WHITE WASHING/PAINTING LIFT SHAFT"
+  },
+  {
+   "fieldname": "c14_lift_no_1",
+   "fieldtype": "Data",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c14_lift_no_2",
+   "fieldtype": "Data",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c14_lift_no_3",
+   "fieldtype": "Data",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c14_lift_no_4",
+   "fieldtype": "Data",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c14_lift_no_5",
+   "fieldtype": "Data",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c14_lift_no_6",
+   "fieldtype": "Data",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c15_lockable_store_room_near_lift_shaft_section",
+   "fieldtype": "Section Break",
+   "label": "C15 LOCKABLE STORE ROOM NEAR LIFT SHAFT"
+  },
+  {
+   "fieldname": "c15_lift_no_1",
+   "fieldtype": "Data",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c15_lift_no_2",
+   "fieldtype": "Data",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c15_lift_no_3",
+   "fieldtype": "Data",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c15_lift_no_4",
+   "fieldtype": "Data",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c15_lift_no_5",
+   "fieldtype": "Data",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c15_lift_no_6",
+   "fieldtype": "Data",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c16_clean_dry_finished_pit_section",
+   "fieldtype": "Section Break",
+   "label": "C16 CLEAN,DRY & FINISHED PIT"
+  },
+  {
+   "fieldname": "c16_lift_no_1",
+   "fieldtype": "Data",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c16_lift_no_2",
+   "fieldtype": "Data",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c16_lift_no_3",
+   "fieldtype": "Data",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c16_lift_no_4",
+   "fieldtype": "Data",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c16_lift_no_5",
+   "fieldtype": "Data",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c16_lift_no_6",
+   "fieldtype": "Data",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c17_safe_clear_unobstructed_access_section",
+   "fieldtype": "Section Break",
+   "label": "C17 SAFE,CLEAR & UNOBSTRUCTED ACCESS"
+  },
+  {
+   "fieldname": "c17_lift_no_1",
+   "fieldtype": "Data",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c17_lift_no_2",
+   "fieldtype": "Data",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c17_lift_no_3",
+   "fieldtype": "Data",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c17_lift_no_4",
+   "fieldtype": "Data",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c17_lift_no_5",
+   "fieldtype": "Data",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c17_lift_no_6",
+   "fieldtype": "Data",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c18_suitable_notch_in_sill_fixing_area_section",
+   "fieldtype": "Section Break",
+   "label": "C18 SUITABLE NOTCH IN SILL FIXING AREA"
+  },
+  {
+   "fieldname": "c18_lift_no_1",
+   "fieldtype": "Data",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c18_lift_no_2",
+   "fieldtype": "Data",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c18_lift_no_3",
+   "fieldtype": "Data",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c18_lift_no_4",
+   "fieldtype": "Data",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c18_lift_no_5",
+   "fieldtype": "Data",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c18_lift_no_6",
+   "fieldtype": "Data",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c19_scaffolding_safety_barricading_section",
+   "fieldtype": "Section Break",
+   "label": "C19 SCAFFOLDING & SAFETY BARRICADING"
+  },
+  {
+   "fieldname": "c19_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c19_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c19_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c19_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c19_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c19_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c20_cut_out_for_lop_on_front_walls_section",
+   "fieldtype": "Section Break",
+   "label": "C20 CUT OUT FOR LOP ON FRONT WALLS"
+  },
+  {
+   "fieldname": "c20_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c20_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c20_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c20_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c20_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c20_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c21_supply_of_mc_support_beams_section",
+   "fieldtype": "Section Break",
+   "label": "C21 SUPPLY OF M/C SUPPORT BEAMS"
+  },
+  {
+   "fieldname": "c21_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c21_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c21_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c21_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c21_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c21_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c22_marking_of_cutouts_of_mc_support_beams_section",
+   "fieldtype": "Section Break",
+   "label": "C22 MARKING OF CUTOUTS OF M/C SUPPORT BEAMS"
+  },
+  {
+   "fieldname": "c22_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c22_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c22_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c22_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c22_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c22_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c23_cutouts_for_mc_support_beams_section",
+   "fieldtype": "Section Break",
+   "label": "C23 CUTOUTS FOR M/C SUPPORT BEAMS"
+  },
+  {
+   "fieldname": "c23_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c23_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c23_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c23_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c23_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c23_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c24_section",
+   "fieldtype": "Section Break",
+   "label": "C24 GROUTING OF M/C SUPPORT BEAMS PLASTERING OF WALLS AND ROOF IN MR"
+  },
+  {
+   "fieldname": "c24_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c24_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c24_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c24_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c24_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c24_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c25_plastering_of_walls_roof_in_mr_section",
+   "fieldtype": "Section Break",
+   "label": "C25 PLASTERING OF WALLS & ROOF IN MR"
+  },
+  {
+   "fieldname": "c25_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c25_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c25_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c25_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c25_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c25_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c26_white_washing_painting_in_mr_section",
+   "fieldtype": "Section Break",
+   "label": "C26 WHITE WASHING / PAINTING IN MR"
+  },
+  {
+   "fieldname": "c26_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c26_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c26_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c26_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c26_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c26_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "e1_permanent_lights_in_lift_shaft_section",
+   "fieldtype": "Section Break",
+   "label": "E1 PERMANENT LIGHTS IN LIFT SHAFT"
+  },
+  {
+   "fieldname": "e1_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "e1_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "e1_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "e1_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "e1_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "e1_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "e2_earthing_on_steel_scaffolding_section",
+   "fieldtype": "Section Break",
+   "label": "E2 EARTHING ON STEEL SCAFFOLDING"
+  },
+  {
+   "fieldname": "e2_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "e2_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "e2_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "e2_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "e2_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "e2_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "e3_earthing_brackets_near_controller_section",
+   "fieldtype": "Section Break",
+   "label": "E3 EARTHING BRACKETS NEAR CONTROLLER"
+  },
+  {
+   "fieldname": "e3_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "e3_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "e3_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "e3_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "e3_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "e3_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "e4_exhaust_fan_section",
+   "fieldtype": "Section Break",
+   "label": "E4 EXHAUST FAN"
+  },
+  {
+   "fieldname": "e4_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "e4_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "e4_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "e4_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "e4_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "e4_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "e5_double_earthing_provided_section",
+   "fieldtype": "Section Break",
+   "label": "E5 DOUBLE EARTHING PROVIDED"
+  },
+  {
+   "fieldname": "e5_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "e5_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "e5_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "e5_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "e5_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "e5_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "e6_danger_plate_440v_section",
+   "fieldtype": "Section Break",
+   "label": "E6 DANGER PLATE (440V)"
+  },
+  {
+   "fieldname": "e6_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "e6_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "e6_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "e6_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "e6_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "e6_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "e7_permanent_lights_in_mr_section",
+   "fieldtype": "Section Break",
+   "label": "E7 PERMANENT LIGHTS IN MR"
+  },
+  {
+   "fieldname": "e7_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "e7_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "e7_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "e7_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "e7_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "e7_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "e8_single_phase_power_switch_socket_section",
+   "fieldtype": "Section Break",
+   "label": "E8 SINGLE PHASE POWER SWITCH/SOCKET"
+  },
+  {
+   "fieldname": "e8_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "e8_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "e8_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "e8_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "e8_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "e8_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "e9_3phase_power_mcb_rccb_section",
+   "fieldtype": "Section Break",
+   "label": "E9 3PHASE POWER+MCB & RCCB"
+  },
+  {
+   "fieldname": "e9_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "e9_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "e9_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "e9_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "e9_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "e9_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "e10_mcb_box_provided_with_cover_section",
+   "fieldtype": "Section Break",
+   "label": "E10 MCB BOX PROVIDED WITH COVER"
+  },
+  {
+   "fieldname": "e10_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "e10_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "e10_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "e10_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "e10_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "e10_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "e11_permanent_lights_in_machine_room_section",
+   "fieldtype": "Section Break",
+   "label": "E11 PERMANENT LIGHTS IN MACHINE ROOM"
+  },
+  {
+   "fieldname": "e11_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "e11_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "e11_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "e11_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "e11_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "e11_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "e12_fire_extinguisher_near_controller_section",
+   "fieldtype": "Section Break",
+   "label": "E12 FIRE EXTINGUISHER NEAR CONTROLLER"
+  },
+  {
+   "fieldname": "e12_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "e12_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "e12_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "e12_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "e12_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "e12_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "e13_louvers_on_smoke_vent_section",
+   "fieldtype": "Section Break",
+   "label": "E13 LOUVERS ON SMOKE VENT"
+  },
+  {
+   "fieldname": "e13_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "e13_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "e13_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "e13_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "e13_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "e13_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "e14_louvers_on_exhaust_fan_section",
+   "fieldtype": "Section Break",
+   "label": "E14 LOUVERS ON EXHAUST FAN"
+  },
+  {
+   "fieldname": "e14_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "e14_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "e14_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "e14_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "e14_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "e14_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c27_door_cladding_architraves_section",
+   "fieldtype": "Section Break",
+   "label": "C27 DOOR CLADDING / ARCHITRAVES"
+  },
+  {
+   "fieldname": "c27_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c27_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c27_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c27_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c27_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c27_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c28_buffer_block_rcc_in_pit_section",
+   "fieldtype": "Section Break",
+   "label": "C28 BUFFER BLOCK ( RCC) IN PIT"
+  },
+  {
+   "fieldname": "c28_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c28_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c28_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c28_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c28_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c28_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c29_final_painting_final_finishing_section",
+   "fieldtype": "Section Break",
+   "label": "C29 FINAL PAINTING / FINAL FINISHING"
+  },
+  {
+   "fieldname": "c29_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c29_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c29_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c29_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c29_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c29_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  },
+  {
+   "fieldname": "c30_steel_ladder_in_lift_pit_section",
+   "fieldtype": "Section Break",
+   "label": "C30 STEEL LADDER IN LIFT PIT"
+  },
+  {
+   "fieldname": "c30_lift_no_1",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 1"
+  },
+  {
+   "fieldname": "c30_lift_no_2",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 2"
+  },
+  {
+   "fieldname": "c30_lift_no_3",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 3"
+  },
+  {
+   "fieldname": "c30_lift_no_4",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 4"
+  },
+  {
+   "fieldname": "c30_lift_no_5",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 5"
+  },
+  {
+   "fieldname": "c30_lift_no_6",
+   "fieldtype": "Small Text",
+   "label": "LIFT NO 6"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-05 22:17:39.193031",
+ "modified_by": "Administrator",
+ "module": "Global-Vertical",
+ "name": "Ni Work Activity",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

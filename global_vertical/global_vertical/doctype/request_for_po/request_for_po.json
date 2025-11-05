@@ -1,0 +1,280 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-01 18:33:05.312249",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "seq_no",
+  "date",
+  "branch",
+  "order_no",
+  "site_name",
+  "no_of_lifts",
+  "site_address",
+  "pin_code",
+  "scope_of_work",
+  "extra_work_if_any",
+  "column_break_mdse",
+  "installation_start_date",
+  "installation_end_date",
+  "type_of_lift",
+  "type_of_drive",
+  "stops",
+  "front_opening",
+  "deg_90_opening_if_any",
+  "reverse_opening_if_any",
+  "type_of_doors",
+  "roping",
+  "spec_section",
+  "pax",
+  "kg",
+  "speed",
+  "over_head",
+  "column_break_bsel",
+  "pit",
+  "travel",
+  "shaft_height",
+  "sub_contractor_details_section",
+  "name_of_sub_contractor",
+  "mobile",
+  "pan_no",
+  "column_break_wjsb",
+  "aadhar_card_no",
+  "contractor_address",
+  "section_break_pyuj",
+  "sub_contractor",
+  "payment_terms",
+  "no_of_workers"
+ ],
+ "fields": [
+  {
+   "fieldname": "seq_no",
+   "fieldtype": "Data",
+   "label": "Seq No"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch"
+  },
+  {
+   "fieldname": "order_no",
+   "fieldtype": "Data",
+   "label": "Order No"
+  },
+  {
+   "fieldname": "site_name",
+   "fieldtype": "Data",
+   "label": "Site Name"
+  },
+  {
+   "fieldname": "no_of_lifts",
+   "fieldtype": "Data",
+   "label": "No of Lifts"
+  },
+  {
+   "fieldname": "site_address",
+   "fieldtype": "Data",
+   "label": "Site Address"
+  },
+  {
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "Pin Code"
+  },
+  {
+   "fieldname": "scope_of_work",
+   "fieldtype": "Small Text",
+   "label": "Scope of Work"
+  },
+  {
+   "fieldname": "column_break_mdse",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "installation_start_date",
+   "fieldtype": "Date",
+   "label": "Installation Start Date"
+  },
+  {
+   "fieldname": "installation_end_date",
+   "fieldtype": "Date",
+   "label": "Installation End Date"
+  },
+  {
+   "fieldname": "type_of_lift",
+   "fieldtype": "Data",
+   "label": "Type of Lift"
+  },
+  {
+   "fieldname": "type_of_drive",
+   "fieldtype": "Data",
+   "label": "Type of Drive"
+  },
+  {
+   "fieldname": "stops",
+   "fieldtype": "Data",
+   "label": "Stops"
+  },
+  {
+   "fieldname": "front_opening",
+   "fieldtype": "Data",
+   "label": "Front Opening"
+  },
+  {
+   "fieldname": "reverse_opening_if_any",
+   "fieldtype": "Data",
+   "label": "Reverse Opening If Any"
+  },
+  {
+   "fieldname": "type_of_doors",
+   "fieldtype": "Data",
+   "label": "Type of Doors"
+  },
+  {
+   "fieldname": "roping",
+   "fieldtype": "Data",
+   "label": "Roping"
+  },
+  {
+   "fieldname": "deg_90_opening_if_any",
+   "fieldtype": "Data",
+   "label": "90 DEG Opening If Any"
+  },
+  {
+   "fieldname": "spec_section",
+   "fieldtype": "Section Break",
+   "label": "Specs"
+  },
+  {
+   "fieldname": "pax",
+   "fieldtype": "Data",
+   "label": "Pax"
+  },
+  {
+   "fieldname": "kg",
+   "fieldtype": "Data",
+   "label": "Kg"
+  },
+  {
+   "fieldname": "speed",
+   "fieldtype": "Data",
+   "label": "Speed"
+  },
+  {
+   "fieldname": "over_head",
+   "fieldtype": "Data",
+   "label": "Over Head"
+  },
+  {
+   "fieldname": "column_break_bsel",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pit",
+   "fieldtype": "Data",
+   "label": "PIT"
+  },
+  {
+   "fieldname": "travel",
+   "fieldtype": "Data",
+   "label": "Travel"
+  },
+  {
+   "fieldname": "shaft_height",
+   "fieldtype": "Data",
+   "label": "Shaft Height"
+  },
+  {
+   "fieldname": "sub_contractor_details_section",
+   "fieldtype": "Section Break",
+   "label": "Sub-Contractor Details"
+  },
+  {
+   "fieldname": "name_of_sub_contractor",
+   "fieldtype": "Data",
+   "label": "Name of Sub-Contractor"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "pan_no",
+   "fieldtype": "Data",
+   "label": "PAN No"
+  },
+  {
+   "fieldname": "column_break_wjsb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "aadhar_card_no",
+   "fieldtype": "Data",
+   "label": "AADHAR Card No"
+  },
+  {
+   "fieldname": "contractor_address",
+   "fieldtype": "Data",
+   "label": "Contractor Address"
+  },
+  {
+   "fieldname": "section_break_pyuj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sub_contractor",
+   "fieldtype": "Table",
+   "label": "Sub Contractor ",
+   "options": "Sub Contractor Details"
+  },
+  {
+   "fieldname": "payment_terms",
+   "fieldtype": "Small Text",
+   "label": "Payment Terms"
+  },
+  {
+   "fieldname": "no_of_workers",
+   "fieldtype": "Int",
+   "label": "No of Workers"
+  },
+  {
+   "fieldname": "extra_work_if_any",
+   "fieldtype": "Small Text",
+   "label": "Extra Work If Any"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-01 18:58:23.605978",
+ "modified_by": "Administrator",
+ "module": "Global-Vertical",
+ "name": "Request for PO",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-02 15:55:33.472760",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "description_of_material_requiredreturned",
+  "reason",
+  "qty",
+  "uom",
+  "reason_code_first",
+  "reason_code_second",
+  "yes_mention_in_packing_list",
+  "no_mention_in_packing_list",
+  "received_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "description_of_material_requiredreturned",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description of Material Required/Returned"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "QTY"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "reason_code_first",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reason Code (First)"
+  },
+  {
+   "fieldname": "reason_code_second",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reason Code (Second)"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes_mention_in_packing_list",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Yes (Mention in Packing List)"
+  },
+  {
+   "default": "0",
+   "fieldname": "no_mention_in_packing_list",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "No (Mention in Packing List)"
+  },
+  {
+   "fieldname": "received_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Received Date"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Reason"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-02 16:12:40.049415",
+ "modified_by": "Administrator",
+ "module": "Global-Vertical",
+ "name": "Description of Material",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

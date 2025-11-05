@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-28 23:25:34.731685",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "location_from",
+  "location_to",
+  "site_from",
+  "site_to",
+  "column_break_xxbm",
+  "mode",
+  "km",
+  "amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "location_from",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location From"
+  },
+  {
+   "fieldname": "location_to",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location To"
+  },
+  {
+   "fieldname": "site_from",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Site From"
+  },
+  {
+   "fieldname": "site_to",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Site To"
+  },
+  {
+   "fieldname": "mode",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Mode",
+   "options": "Car\nBike\nBus\nTrain"
+  },
+  {
+   "fieldname": "km",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "KM (If Bike)",
+   "read_only_depends_on": "eval:doc.mode!=\"Bike\""
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Amount"
+  },
+  {
+   "fieldname": "column_break_xxbm",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-10-28 23:30:39.365501",
+ "modified_by": "Administrator",
+ "module": "Global-Vertical",
+ "name": "Expense Report",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

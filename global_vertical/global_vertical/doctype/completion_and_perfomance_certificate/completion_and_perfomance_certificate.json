@@ -1,0 +1,116 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-27 23:31:01.119438",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_name",
+  "site_address",
+  "easa_order_no",
+  "project_value",
+  "scope_of_work",
+  "specifications",
+  "column_break_tktp",
+  "date",
+  "work_schedule_start_date",
+  "work_schedule_completion_date",
+  "warranty_period_from",
+  "warranty_period_to",
+  "easa_team"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "label": "Customer Name",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "site_address",
+   "fieldtype": "Data",
+   "label": "Site Address"
+  },
+  {
+   "fieldname": "easa_order_no",
+   "fieldtype": "Data",
+   "label": "EASA Order No."
+  },
+  {
+   "fieldname": "project_value",
+   "fieldtype": "Float",
+   "label": "Project Value",
+   "precision": "2"
+  },
+  {
+   "fieldname": "scope_of_work",
+   "fieldtype": "Data",
+   "label": "Scope of Work"
+  },
+  {
+   "fieldname": "specifications",
+   "fieldtype": "Data",
+   "label": "Specifications"
+  },
+  {
+   "fieldname": "column_break_tktp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "work_schedule_start_date",
+   "fieldtype": "Date",
+   "label": "Work Schedule Start Date"
+  },
+  {
+   "fieldname": "work_schedule_completion_date",
+   "fieldtype": "Date",
+   "label": "Work Schedule Completion Date"
+  },
+  {
+   "fieldname": "warranty_period_from",
+   "fieldtype": "Date",
+   "label": "Warranty Period From"
+  },
+  {
+   "fieldname": "warranty_period_to",
+   "fieldtype": "Date",
+   "label": "Warranty Period To"
+  },
+  {
+   "fieldname": "easa_team",
+   "fieldtype": "Data",
+   "label": "EASA Team"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-27 23:45:52.852124",
+ "modified_by": "Administrator",
+ "module": "Global-Vertical",
+ "name": "Completion and Perfomance Certificate",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

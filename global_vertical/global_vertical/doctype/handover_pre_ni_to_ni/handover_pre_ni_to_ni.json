@@ -1,0 +1,422 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-30 22:00:25.352118",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sno",
+  "site_name",
+  "site_address",
+  "column_break_udev",
+  "pincode",
+  "order_no",
+  "city",
+  "accepted_by_ni_section",
+  "yes",
+  "column_break_gjov",
+  "no",
+  "section_break_aoph",
+  "contact_details",
+  "section_break_jztz",
+  "architect",
+  "date_of_acceptance_by_ni",
+  "inspection_date_1",
+  "column_break_evyh",
+  "inspection_date_2",
+  "inspection_date_3",
+  "approved_gad_received_section",
+  "yes1",
+  "column_break_eixc",
+  "no1",
+  "type_of_lift_section",
+  "mrl",
+  "mr",
+  "passenger",
+  "car",
+  "over_head",
+  "column_break_lzxs",
+  "home",
+  "freight",
+  "dw",
+  "pit",
+  "type_of_doors_section",
+  "coll",
+  "pco2",
+  "p_tltr",
+  "vbp",
+  "travel",
+  "column_break_tera",
+  "pco4",
+  "pco6",
+  "pco8",
+  "shaft_height",
+  "specs_section",
+  "roping_1_1",
+  "roping_2_1",
+  "roping_4_1",
+  "pax",
+  "kg",
+  "speed_mps",
+  "column_break_jscp",
+  "stops",
+  "front_opening",
+  "reverse_opening",
+  "deg_90_opening",
+  "section_break_awla",
+  "team_details",
+  "section_break_kxgn",
+  "points"
+ ],
+ "fields": [
+  {
+   "fieldname": "sno",
+   "fieldtype": "Data",
+   "label": "SNO"
+  },
+  {
+   "fieldname": "site_name",
+   "fieldtype": "Data",
+   "label": "Site Name"
+  },
+  {
+   "fieldname": "site_address",
+   "fieldtype": "Data",
+   "label": "Site Address"
+  },
+  {
+   "fieldname": "column_break_udev",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Int",
+   "label": "Pincode"
+  },
+  {
+   "fieldname": "order_no",
+   "fieldtype": "Data",
+   "label": "Order No"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "accepted_by_ni_section",
+   "fieldtype": "Section Break",
+   "label": "Accepted By NI"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "fieldname": "column_break_gjov",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "no",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "fieldname": "section_break_jztz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date_of_acceptance_by_ni",
+   "fieldtype": "Date",
+   "label": "Date of Acceptance by NI"
+  },
+  {
+   "fieldname": "inspection_date_1",
+   "fieldtype": "Date",
+   "label": "Inspection Date 1"
+  },
+  {
+   "fieldname": "column_break_evyh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "inspection_date_2",
+   "fieldtype": "Date",
+   "label": "Inspection Date 2"
+  },
+  {
+   "fieldname": "inspection_date_3",
+   "fieldtype": "Date",
+   "label": "Inspection Date 3"
+  },
+  {
+   "fieldname": "approved_gad_received_section",
+   "fieldtype": "Section Break",
+   "label": "Approved Gad Received"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes1",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "fieldname": "column_break_eixc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "no1",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "fieldname": "type_of_lift_section",
+   "fieldtype": "Section Break",
+   "label": "Type of Lift"
+  },
+  {
+   "default": "0",
+   "fieldname": "mrl",
+   "fieldtype": "Check",
+   "label": "MRL"
+  },
+  {
+   "default": "0",
+   "fieldname": "mr",
+   "fieldtype": "Check",
+   "label": "MR"
+  },
+  {
+   "default": "0",
+   "fieldname": "passenger",
+   "fieldtype": "Check",
+   "label": "PASSENGER"
+  },
+  {
+   "default": "0",
+   "fieldname": "car",
+   "fieldtype": "Check",
+   "label": "CAR"
+  },
+  {
+   "fieldname": "over_head",
+   "fieldtype": "Data",
+   "label": "Over Head"
+  },
+  {
+   "fieldname": "column_break_lzxs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "home",
+   "fieldtype": "Check",
+   "label": "HOME"
+  },
+  {
+   "default": "0",
+   "fieldname": "freight",
+   "fieldtype": "Check",
+   "label": "FREIGHT"
+  },
+  {
+   "default": "0",
+   "fieldname": "dw",
+   "fieldtype": "Check",
+   "label": "DW"
+  },
+  {
+   "fieldname": "pit",
+   "fieldtype": "Data",
+   "label": "PIT"
+  },
+  {
+   "fieldname": "type_of_doors_section",
+   "fieldtype": "Section Break",
+   "label": "Type of Doors"
+  },
+  {
+   "default": "0",
+   "fieldname": "coll",
+   "fieldtype": "Check",
+   "label": "COLL"
+  },
+  {
+   "default": "0",
+   "fieldname": "vbp",
+   "fieldtype": "Check",
+   "label": "VBP"
+  },
+  {
+   "fieldname": "travel",
+   "fieldtype": "Data",
+   "label": "Travel"
+  },
+  {
+   "fieldname": "column_break_tera",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "specs_section",
+   "fieldtype": "Section Break",
+   "label": "Specs"
+  },
+  {
+   "default": "0",
+   "fieldname": "roping_1_1",
+   "fieldtype": "Check",
+   "label": "Roping 1:1"
+  },
+  {
+   "default": "0",
+   "fieldname": "roping_2_1",
+   "fieldtype": "Check",
+   "label": "Roping 2:1"
+  },
+  {
+   "default": "0",
+   "fieldname": "roping_4_1",
+   "fieldtype": "Check",
+   "label": "Roping 4:1"
+  },
+  {
+   "fieldname": "pax",
+   "fieldtype": "Data",
+   "label": "Pax"
+  },
+  {
+   "fieldname": "kg",
+   "fieldtype": "Data",
+   "label": "KG"
+  },
+  {
+   "fieldname": "speed_mps",
+   "fieldtype": "Data",
+   "label": "Speed (mps)"
+  },
+  {
+   "fieldname": "column_break_jscp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stops",
+   "fieldtype": "Data",
+   "label": "Stops"
+  },
+  {
+   "fieldname": "front_opening",
+   "fieldtype": "Data",
+   "label": "Front Opening"
+  },
+  {
+   "fieldname": "reverse_opening",
+   "fieldtype": "Data",
+   "label": "Reverse Opening"
+  },
+  {
+   "fieldname": "section_break_aoph",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "contact_details",
+   "fieldtype": "Table",
+   "label": "Contact Details",
+   "options": "Handover Contact Details"
+  },
+  {
+   "fieldname": "architect",
+   "fieldtype": "Data",
+   "label": "Architect"
+  },
+  {
+   "fieldname": "deg_90_opening",
+   "fieldtype": "Data",
+   "label": "90 DEG Opening"
+  },
+  {
+   "fieldname": "section_break_awla",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "team_details",
+   "fieldtype": "Table",
+   "label": "Team Details",
+   "options": "Pre NI to NI"
+  },
+  {
+   "fieldname": "section_break_kxgn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "points",
+   "fieldtype": "Table",
+   "label": "Points",
+   "options": "Handover Points"
+  },
+  {
+   "fieldname": "shaft_height",
+   "fieldtype": "Data",
+   "label": "Shaft Height"
+  },
+  {
+   "default": "0",
+   "fieldname": "p_tltr",
+   "fieldtype": "Check",
+   "label": "2P TL/TR"
+  },
+  {
+   "default": "0",
+   "fieldname": "pco4",
+   "fieldtype": "Check",
+   "label": "4PCO"
+  },
+  {
+   "default": "0",
+   "fieldname": "pco6",
+   "fieldtype": "Check",
+   "label": "6PCO"
+  },
+  {
+   "default": "0",
+   "fieldname": "pco8",
+   "fieldtype": "Check",
+   "label": "8PCO"
+  },
+  {
+   "default": "0",
+   "fieldname": "pco2",
+   "fieldtype": "Check",
+   "label": "2PCO"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-30 23:55:19.670957",
+ "modified_by": "Administrator",
+ "module": "Global-Vertical",
+ "name": "Handover PRE NI to NI",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

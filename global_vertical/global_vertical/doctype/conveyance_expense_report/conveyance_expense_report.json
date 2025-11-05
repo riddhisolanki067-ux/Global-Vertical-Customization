@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-28 22:40:06.775158",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "page_no",
+  "name1",
+  "employee_id",
+  "position",
+  "column_break_ytpb",
+  "submitted_by",
+  "checked_by",
+  "approved_by",
+  "department_section",
+  "ni",
+  "column_break_kfus",
+  "ei",
+  "section_break_rapa",
+  "expense_report"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "page_no",
+   "fieldtype": "Data",
+   "label": "Page No."
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Data",
+   "label": "Employee ID"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "label": "Position"
+  },
+  {
+   "fieldname": "column_break_ytpb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "submitted_by",
+   "fieldtype": "Link",
+   "label": "Submitted By",
+   "options": "User"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Link",
+   "label": "Checked By",
+   "options": "User"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By ",
+   "options": "User"
+  },
+  {
+   "fieldname": "department_section",
+   "fieldtype": "Section Break",
+   "label": "Department"
+  },
+  {
+   "default": "0",
+   "fieldname": "ni",
+   "fieldtype": "Check",
+   "label": "NI"
+  },
+  {
+   "fieldname": "column_break_kfus",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "ei",
+   "fieldtype": "Check",
+   "label": "EI"
+  },
+  {
+   "fieldname": "section_break_rapa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "expense_report",
+   "fieldtype": "Table",
+   "label": "Expense Report",
+   "options": "Expense Report"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-28 23:31:10.897479",
+ "modified_by": "Administrator",
+ "module": "Global-Vertical",
+ "name": "Conveyance Expense Report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
